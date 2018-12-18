@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>rst</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>rst</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001102</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>K9</Dynamic>
+            <Dynamic>LEDb[10]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1103694</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Semantic error in &quot;LOCATE COMP &quot;LEDb[10]&quot; SITE &quot;K9&quot; ;&quot;: </Dynamic>
+            <Dynamic>K9</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901372</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/tallen/Projects/LatticeLedTest/source/test.v(8): </Dynamic>
+            <Dynamic>rst</Dynamic>
+            <Navigation>/home/tallen/Projects/LatticeLedTest/source/test.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/tallen/Projects/LatticeLedTest/source/test.v(1): </Dynamic>
+            <Dynamic>test</Dynamic>
+            <Navigation>/home/tallen/Projects/LatticeLedTest/source/test.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.10_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo3l.v(1759): </Dynamic>
+            <Dynamic>OSCH(NOM_FREQ=&quot;12.09&quot;)</Dynamic>
+            <Navigation>/usr/local/diamond/3.10_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>1759</Navigation>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>rst</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>rst</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>rst</Dynamic>
+            <Navigation>rst</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>rst</Dynamic>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

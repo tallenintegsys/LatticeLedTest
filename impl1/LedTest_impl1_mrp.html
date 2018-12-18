@@ -1,0 +1,314 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+             Lattice Mapping Report File for Design Module 'test'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO3LF -p LCMXO3LF-6900C -t CABGA256 -s 5 -oc
+     Commercial LedTest_impl1.ngd -o LedTest_impl1_map.ncd -pr LedTest_impl1.prf
+     -mp LedTest_impl1.mrp -lpf
+     /home/tallen/Projects/LatticeLedTest/impl1/LedTest_impl1.lpf -lpf
+     /home/tallen/Projects/LatticeLedTest/LedTest.lpf -c 0 -gui -msgset
+     /home/tallen/Projects/LatticeLedTest/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO3LF-6900CCABGA256
+Target Performance:   5
+Mapper:  xo3c00f,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  04/22/18  21:08:56
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:     32 out of  7485 (0%)
+      PFU registers:           32 out of  6864 (0%)
+      PIO registers:            0 out of   621 (0%)
+   Number of SLICEs:        17 out of  3432 (0%)
+      SLICEs as Logic/ROM:     17 out of  3432 (0%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:         17 out of  3432 (0%)
+   Number of LUT4s:         34 out of  6864 (0%)
+      Number used as logic LUTs:          0
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       34
+      Number used as shift registers:     0
+   Number of PIO sites used: 32 + 4(JTAG) out of 207 (17%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net clk: 17 loads, 17 rising, 0 falling (Driver: OSCH_inst )
+   Number of Clock Enables:  0
+
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net LEDb_c: 3 loads
+     Net n122: 3 loads
+     Net n123: 3 loads
+     Net n124: 3 loads
+     Net n125: 3 loads
+     Net n126: 3 loads
+     Net n127: 3 loads
+     Net n128: 3 loads
+     Net n129: 3 loads
+     Net n131: 3 loads
+
+
+
+
+   Number of warnings:  4
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: input pad net 'rst' has no legal load.
+WARNING - map: IO buffer missing for top level port rst...logic will be
+     discarded.
+WARNING - map: Specified location site name "K9" is not valid for LEDb[10].
+     Location directive ignored.
+WARNING - map: Semantic error in "LOCATE COMP "LEDb[10]" SITE "K9" ;": Unable to
+     find site K9 in the device. This preference has been disabled.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| LEDa[15]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[14]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[13]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[12]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[11]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[10]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[9]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[8]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[7]             | OUTPUT    | LVCMOS25  |            |
+
++---------------------+-----------+-----------+------------+
+| LEDa[6]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[5]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[4]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[3]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[2]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[1]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[0]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[15]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[14]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[13]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[12]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[11]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[10]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[9]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[8]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[7]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[6]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[5]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[4]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[3]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[2]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[1]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[0]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block i2 undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal GND_net undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal count_8_add_4_1/S0 undriven or does not drive anything - clipped.
+
+Signal count_8_add_4_1/CI undriven or does not drive anything - clipped.
+Signal count_8_add_4_33/S1 undriven or does not drive anything - clipped.
+Signal count_8_add_4_33/CO undriven or does not drive anything - clipped.
+Block i1 was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                OSCH_inst
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     clk
+  OSC Nominal Frequency (MHz):                      12.09
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: OSCH_inst
+         Type: OSCH
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 194 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>
