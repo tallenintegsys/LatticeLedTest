@@ -3,7 +3,8 @@ Report for cell test
    Instance path: test
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      17.00        100.0
+                                  SLIC	      50.00        100.0
+                                  LUT4	      75.00        100.0
                                  IOBUF	         32        100.0
-                                PFUREG	         32        100.0
-                                RIPPLE	         17        100.0
+                                PFUREG	         43        100.0
+                                RIPPLE	         12        100.0

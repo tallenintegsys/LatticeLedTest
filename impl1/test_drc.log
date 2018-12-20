@@ -7,12 +7,10 @@ Loading NGL library '/usr/local/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ng
 
 Running DRC...
 
-WARNING - synthesis: logical net 'rst' has no load.
-WARNING - synthesis: input pad net 'rst' has no legal load.
-WARNING - synthesis: DRC complete with 2 warnings.
+DRC complete with no errors or warnings
 
 Design Results:
-     86 blocks expanded
+    175 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file LedTest_impl1.ngd.
