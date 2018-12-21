@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001104</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>M14</Dynamic>
+        </Message>
+        <Message>
+            <ID>1103737</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>LOCATE COMP &quot;LEDa[13]&quot; SITE &quot;M14&quot; ;
+</Dynamic>
+            <Dynamic>LOCATE COMP &quot;LEDa[11]&quot; SITE &quot;M14&quot; ;
+</Dynamic>
+        </Message>
+    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>35002000</ID>
@@ -20,20 +36,20 @@
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>/home/tallen/Projects/LatticeLedTest/source/test.v(16): </Dynamic>
+            <Dynamic>/home/tallen/Projects/LatticeLedTest/source/test.v(17): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>22</Dynamic>
             <Navigation>/home/tallen/Projects/LatticeLedTest/source/test.v</Navigation>
-            <Navigation>16</Navigation>
+            <Navigation>17</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>/home/tallen/Projects/LatticeLedTest/source/test.v(19): </Dynamic>
+            <Dynamic>/home/tallen/Projects/LatticeLedTest/source/test.v(20): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>5</Dynamic>
             <Navigation>/home/tallen/Projects/LatticeLedTest/source/test.v</Navigation>
-            <Navigation>19</Navigation>
+            <Navigation>20</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>

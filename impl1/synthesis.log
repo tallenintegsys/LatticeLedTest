@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Dec 20 13:46:06 2018
+Thu Dec 20 17:47:13 2018
 
 
 Command Line:  synthesis -f LedTest_impl1_lattice.synproj -gui -msgset /home/tallen/Projects/LatticeLedTest/promote.xml 
@@ -80,8 +80,8 @@ Analyzing Verilog file /home/tallen/Projects/LatticeLedTest/source/test.v. VERI-
 Analyzing Verilog file /usr/local/diamond/3.10_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo3l.v. VERI-1482
 Top module name (Verilog): test
 INFO - synthesis: /home/tallen/Projects/LatticeLedTest/source/test.v(1): compiling module test. VERI-1018
-WARNING - synthesis: /home/tallen/Projects/LatticeLedTest/source/test.v(16): expression size 32 truncated to fit in target size 22. VERI-1209
-WARNING - synthesis: /home/tallen/Projects/LatticeLedTest/source/test.v(19): expression size 32 truncated to fit in target size 5. VERI-1209
+WARNING - synthesis: /home/tallen/Projects/LatticeLedTest/source/test.v(17): expression size 32 truncated to fit in target size 22. VERI-1209
+WARNING - synthesis: /home/tallen/Projects/LatticeLedTest/source/test.v(20): expression size 32 truncated to fit in target size 5. VERI-1209
 INFO - synthesis: /usr/local/diamond/3.10_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo3l.v(1759): compiling module OSCH(NOM_FREQ="12.09"). VERI-1018
 Loading NGL library '/usr/local/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library '/usr/local/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -106,15 +106,16 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file LedTest_impl1.ngd.
 
 ################### Begin Area Report (test)######################
-Number of register bits => 43 of 7485 (0 % )
+Number of register bits => 59 of 7485 (0 % )
 CCU2D => 12
-FD1P3AX => 21
+FD1P3AX => 23
+FD1P3JX => 14
 FD1S3AX => 22
 GSR => 1
-LUT4 => 76
+LUT4 => 93
 OB => 32
 OSCH => 1
-PFUMX => 7
+PFUMX => 8
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -124,23 +125,24 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : clk, loads : 43
+  Net : clk, loads : 59
 Clock Enable Nets
-Number of Clock Enables: 1
-Top 1 highest fanout Clock Enables:
-  Net : clk_enable_21, loads : 21
+Number of Clock Enables: 2
+Top 2 highest fanout Clock Enables:
+  Net : clk_enable_28, loads : 24
+  Net : clk_enable_37, loads : 16
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : step_3, loads : 35
-  Net : step_2, loads : 35
-  Net : step_4, loads : 31
-  Net : step_1, loads : 28
-  Net : step_0, loads : 23
-  Net : clk_enable_21, loads : 21
-  Net : n1375, loads : 7
-  Net : n2394, loads : 6
-  Net : n2106, loads : 6
-  Net : n35, loads : 6
+  Net : step_3, loads : 45
+  Net : step_2, loads : 44
+  Net : step_4, loads : 35
+  Net : step_1, loads : 34
+  Net : step_0, loads : 32
+  Net : clk_enable_28, loads : 24
+  Net : clk_enable_37, loads : 16
+  Net : n158, loads : 9
+  Net : n2333, loads : 7
+  Net : n2340, loads : 7
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -150,7 +152,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clk]                     |  200.000 MHz|  107.666 MHz|     6 *
+clk0 [get_nets clk]                     |  200.000 MHz|  107.308 MHz|     6 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -158,8 +160,8 @@ clk0 [get_nets clk]                     |  200.000 MHz|  107.666 MHz|     6 *
 1 constraints not met.
 
 
-Peak Memory Usage: 195.469  MB
+Peak Memory Usage: 194.805  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.647  secs
+Elapsed CPU time for LSE flow : 0.615  secs
 --------------------------------------------------------------
