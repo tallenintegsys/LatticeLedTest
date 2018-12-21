@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Dec 20 20:29:07 2018
+Fri Dec 21 12:42:34 2018
 
 
 Command Line:  synthesis -f LedTest_impl1_lattice.synproj -gui -msgset /home/tallen/Projects/LatticeLedTest/promote.xml 
@@ -103,6 +103,12 @@ Top-level module name = test.
 
 
 GSR will not be inferred because no asynchronous signal was found in the netlist.
+Duplicate register/latch removal. charb_i0_i1 is a one-to-one match with charb_i0_i3.
+Duplicate register/latch removal. charb_i0_i16 is a one-to-one match with charb_i0_i15.
+Duplicate register/latch removal. charb_i0_i6 is a one-to-one match with charb_i0_i4.
+Duplicate register/latch removal. chara_i0_i16 is a one-to-one match with chara_i0_i15.
+Duplicate register/latch removal. chara_i0_i6 is a one-to-one match with chara_i0_i4.
+Duplicate register/latch removal. chara_i0_i3 is a one-to-one match with chara_i0_i1.
 Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
@@ -115,16 +121,16 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file LedTest_impl1.ngd.
 
 ################### Begin Area Report (test)######################
-Number of register bits => 59 of 7485 (0 % )
+Number of register bits => 53 of 7485 (0 % )
 CCU2D => 12
-FD1P3AX => 23
-FD1P3JX => 14
-FD1S3AX => 22
+FD1P3AX => 29
+FD1P3JX => 1
+FD1S3AX => 23
 GSR => 1
-LUT4 => 93
+LUT4 => 139
 OB => 32
 OSCH => 1
-PFUMX => 8
+PFUMX => 7
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -134,24 +140,25 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : clk, loads : 59
+  Net : clk, loads : 53
 Clock Enable Nets
-Number of Clock Enables: 2
-Top 2 highest fanout Clock Enables:
-  Net : clk_enable_28, loads : 24
-  Net : clk_enable_37, loads : 16
+Number of Clock Enables: 3
+Top 3 highest fanout Clock Enables:
+  Net : clk_enable_30, loads : 14
+  Net : clk_enable_15, loads : 13
+  Net : clk_enable_19, loads : 7
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : step_3, loads : 45
-  Net : step_2, loads : 44
-  Net : step_4, loads : 35
-  Net : step_1, loads : 34
-  Net : step_0, loads : 32
-  Net : clk_enable_28, loads : 24
-  Net : clk_enable_37, loads : 16
-  Net : n158, loads : 9
-  Net : n2333, loads : 7
-  Net : n2340, loads : 7
+  Net : step_0, loads : 38
+  Net : step_3, loads : 35
+  Net : step_2, loads : 35
+  Net : step_1, loads : 35
+  Net : step_4, loads : 28
+  Net : clk_enable_30, loads : 14
+  Net : n7355, loads : 13
+  Net : n6960, loads : 13
+  Net : clk_enable_15, loads : 13
+  Net : step_4_N_60_4, loads : 9
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -161,7 +168,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clk]                     |  200.000 MHz|  107.308 MHz|     6 *
+clk0 [get_nets clk]                     |  200.000 MHz|   55.897 MHz|    12 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -169,10 +176,10 @@ clk0 [get_nets clk]                     |  200.000 MHz|  107.308 MHz|     6 *
 1 constraints not met.
 
 
-Peak Memory Usage: 194.801  MB
+Peak Memory Usage: 201.113  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.645  secs
+Elapsed CPU time for LSE flow : 0.931  secs
 --------------------------------------------------------------
 
 

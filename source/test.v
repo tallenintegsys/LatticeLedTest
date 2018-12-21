@@ -20,136 +20,146 @@ begin
 		step = step + 1;
 		if (step == 1)
 			begin
-			chara = 16'b0111111111111111;
-			charb = 16'b0011000011111111;
+			chara = charb;
+			charb = 16'b0011000011111111; //C
 			end
 		if (step == 2)
 			begin
-			chara = 16'b1011111111111111;
-			charb = 16'b0000000011111111;
+			chara = charb;
+			charb = 16'b0000000011111111; //O
 			end
 		if (step == 3)
 			begin
-			chara = 16'b1101111111111111;
-			charb = 16'b0000001101101101;
+			chara = charb;
+			charb = 16'b0000001101101101; //B
 			end
 		if (step == 4)
 			begin
-			chara = 16'b1110111111111111;
-			charb = 16'b1111111111010101;
+			chara = charb;
+			charb = 16'b1111111111010101; //Y
 			end
 		if (step == 5)
 			begin
-			chara = 16'b1111011111111111;
-			charb = 16'b1111111111111111;
+			chara = charb;
+			charb = 16'b1111111111111111; //
 			end
 		if (step == 6)
 			begin
-			chara = 16'b1111101111111111;
-			charb = 16'b1111111111111111;
+			chara = charb;
+			charb = 16'b1111111111111111; //
 			end
 			
 		if (step == 7)
 			begin
-			chara = 16'b1111110111111111;
-			charb = 16'b1111000110111101;
+			chara = charb;
+			charb = 16'b1111000110111101; //a
 			end
 		if (step == 8)
 			begin
-			chara = 16'b1111111011111111;
-			charb = 16'b1111110110111101;
+			chara = charb;
+			charb = 16'b1111110110111101; //n
 			end
 		if (step == 9)
 			begin
-			chara = 16'b1111111101111111;
-			charb = 16'b1100011101111101;
+			chara = charb;
+			charb = 16'b1100011101111101; //d
 			end
 		if (step == 10)
 			begin
-			chara = 16'b1111111110111111;
-			charb = 16'b1111111111111111;
+			chara = charb;
+			charb = 16'b1111111111111111; // 
 			end
 		if (step == 11)
 			begin
-			chara = 16'b1111111111011111;
-			charb = 16'b1111111111111111;
+			chara = charb;
+			charb = 16'b1111111111111111; // 
 			end
 
 		if (step == 12)
 			begin
-			chara = 16'b1111111111101111;
-			charb = 16'b0000110000111111;
+			chara = charb;
+			charb = 16'b0000110000111111; //A
 			end
 		if (step == 13)
 			begin
-			chara = 16'b1111111111110111;
-			charb = 16'b0001110000111111;
+			chara = charb;
+			charb = 16'b0001110000111111; //P
 			end
 		if (step == 14)
 			begin
-			chara = 16'b1111111111111011;
-			charb = 16'b1111111111111111;
+			chara = charb;
+			charb = 16'b0001110000111111; //P
 			end
 		if (step == 15)
 			begin
-			chara = 16'b1111111111111101;
-			charb = 16'b0001110000111111;
+			chara = charb;
+			charb = 16'b0000110000111111; //A
 			end
 		if (step == 16)
 			begin
-			chara = 16'b1111111111111110;
-			charb = 16'b0000110000111111;
+			chara = charb;
+			charb = 16'b1111111111111111; // 
 			end
 		if (step == 17)
 			begin
-			chara = 16'b1111111111111111;
-			charb = 16'b1111111111111111;
-			end
-		if (step == 18)
-			begin
-			charb = 16'b1111111111111111;
+			charb = 16'b1111111111111111; // 
 			end
 
+		if (step == 18)
+			begin
+			chara = charb;
+			charb = 16'b1111000110111101; //a
+			end
 		if (step == 19)
 			begin
-			charb = 16'b1111000110111101;
+			chara = charb;
+			charb = 16'b1111110110111101; //n
 			end
 		if (step == 20)
 			begin
-			charb = 16'b1111110110111101;
+			chara = charb;
+			charb = 16'b1100011101111101; //d
 			end
 		if (step == 21)
 			begin
-			charb = 16'b1100011101111101;
+			chara = charb;
+			charb = 16'b1111111111111111; // 
 			end
 		if (step == 22)
 			begin
-			charb = 16'b1111111111111111;
-			end
-		if (step == 23)
-			begin
-			charb = 16'b1111111111111111;
+			chara = charb;
+			charb = 16'b1111111111111111; // 
 			end
 
+		if (step == 23)
+			begin
+			chara = charb;
+			charb = 16'b0000000011111111; //O
+			end
 		if (step == 24)
 			begin
-			charb = 16'b0000000011111111;
+			chara = charb;
+			charb = 16'b1100110011010111; //M
 			end
 		if (step == 25)
 			begin
-			charb = 16'b1100110011010111;
+			chara = charb;
+			charb = 16'b0000110000111111; //A
 			end
 		if (step == 26)
 			begin
-			charb = 16'b0000110000111111;
+			chara = charb;
+			charb = 16'b1100110000111111; //H
 			end
 		if (step == 27)
 			begin
-			charb = 16'b1100110000111111;
+			chara = charb;
+			charb = 16'b1111111111111111; // 
 			end
 		if (step == 28)
 			begin
-			charb = 16'b1111111111111111;
+			chara = charb;
+			charb = 16'b1111111111111111; // 
 			end
 		end
 end

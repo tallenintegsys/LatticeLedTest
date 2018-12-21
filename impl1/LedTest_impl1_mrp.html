@@ -23,19 +23,19 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO3LF-6900CCABGA256
 Target Performance:   5
 Mapper:  xo3c00f,  version:  Diamond (64-bit) 3.10.3.144
-Mapped on:  12/20/18  20:29:08
+Mapped on:  12/21/18  12:42:35
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:     59 out of  7485 (1%)
-      PFU registers:           59 out of  6864 (1%)
+   Number of registers:     53 out of  7485 (1%)
+      PFU registers:           53 out of  6864 (1%)
       PIO registers:            0 out of   621 (0%)
-   Number of SLICEs:        59 out of  3432 (2%)
-      SLICEs as Logic/ROM:     59 out of  3432 (2%)
+   Number of SLICEs:        82 out of  3432 (2%)
+      SLICEs as Logic/ROM:     82 out of  3432 (2%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:         12 out of  3432 (0%)
-   Number of LUT4s:        117 out of  6864 (2%)
-      Number used as logic LUTs:         93
+   Number of LUT4s:        163 out of  6864 (2%)
+      Number used as logic LUTs:        139
       Number used as distributed RAM:     0
       Number used as ripple logic:       24
       Number used as shift registers:     0
@@ -65,26 +65,26 @@ Mapped on:  12/20/18  20:29:08
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  1
-     Net clk: 36 loads, 36 rising, 0 falling (Driver: OSCH_inst )
-   Number of Clock Enables:  2
+     Net clk: 29 loads, 29 rising, 0 falling (Driver: OSCH_inst )
+   Number of Clock Enables:  3
 
-     Net clk_enable_28: 12 loads, 12 LSLICEs
-     Net clk_enable_37: 12 loads, 12 LSLICEs
-   Number of LSRs:  2
-     Net n2333: 4 loads, 4 LSLICEs
-     Net n2340: 7 loads, 7 LSLICEs
+     Net clk_enable_30: 7 loads, 7 LSLICEs
+     Net clk_enable_15: 7 loads, 7 LSLICEs
+     Net clk_enable_19: 2 loads, 2 LSLICEs
+   Number of LSRs:  1
+     Net n8191: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net step_3: 45 loads
-     Net step_2: 44 loads
-     Net step_4: 35 loads
-     Net step_1: 34 loads
-     Net step_0: 32 loads
-     Net clk_enable_28: 15 loads
-     Net clk_enable_37: 12 loads
-     Net n158: 9 loads
-     Net n2340: 7 loads
-     Net n1134: 6 loads
+     Net step_0: 38 loads
+     Net step_1: 35 loads
+     Net step_2: 35 loads
+     Net step_3: 35 loads
+     Net step_4: 28 loads
+     Net n6960: 13 loads
+     Net n7355: 13 loads
+     Net n9911: 9 loads
+     Net n9935: 9 loads
+     Net step_4_N_60_4: 9 loads
 
 
 
@@ -108,70 +108,70 @@ Mapped on:  12/20/18  20:29:08
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| LEDa[14]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDa[13]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
 | LEDa[15]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| LEDa[12]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDa[11]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDa[10]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDa[9]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDa[8]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDa[7]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDa[6]             | OUTPUT    | LVCMOS25  |            |
-
-+---------------------+-----------+-----------+------------+
-| LEDa[5]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDa[4]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDa[3]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDa[2]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDa[1]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDa[0]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDb[15]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDb[14]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDb[13]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDb[12]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDb[11]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDb[10]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDb[9]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDb[8]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDb[7]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDb[6]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDb[5]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDb[4]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDb[3]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| LEDb[2]             | OUTPUT    | LVCMOS25  |            |
+| LEDb[0]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | LEDb[1]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| LEDb[0]             | OUTPUT    | LVCMOS25  |            |
+| LEDb[2]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[3]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[4]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[5]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[6]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[7]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[8]             | OUTPUT    | LVCMOS25  |            |
+
++---------------------+-----------+-----------+------------+
+| LEDb[9]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[10]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[11]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[12]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[13]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[14]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDb[15]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[0]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[1]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[2]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[3]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[4]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[5]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[6]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[7]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[8]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[9]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[10]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[11]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[12]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[13]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDa[14]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 
 
@@ -182,11 +182,11 @@ Block i2 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
 Signal GND_net undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal count_490_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal count_490_add_4_1/CI undriven or does not drive anything - clipped.
-Signal count_490_add_4_23/S1 undriven or does not drive anything - clipped.
+Signal add_102_1/S0 undriven or does not drive anything - clipped.
+Signal add_102_1/CI undriven or does not drive anything - clipped.
+Signal add_102_23/S1 undriven or does not drive anything - clipped.
 
-Signal count_490_add_4_23/CO undriven or does not drive anything - clipped.
+Signal add_102_23/CO undriven or does not drive anything - clipped.
 Block i1 was optimized away.
 
 
