@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Dec 20 17:47:13 2018
+Thu Dec 20 20:29:07 2018
 
 
 Command Line:  synthesis -f LedTest_impl1_lattice.synproj -gui -msgset /home/tallen/Projects/LatticeLedTest/promote.xml 
@@ -160,8 +160,8 @@ clk0 [get_nets clk]                     |  200.000 MHz|  107.308 MHz|     6 *
 1 constraints not met.
 
 
-Peak Memory Usage: 194.805  MB
+Peak Memory Usage: 194.801  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.615  secs
+Elapsed CPU time for LSE flow : 0.645  secs
 --------------------------------------------------------------

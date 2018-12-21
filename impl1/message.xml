@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Map">
-        <Message>
-            <ID>51001104</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>M14</Dynamic>
-        </Message>
-        <Message>
-            <ID>1103737</ID>
-            <Severity>Warning</Severity>
-            <Dynamic></Dynamic>
-            <Dynamic>LOCATE COMP &quot;LEDa[13]&quot; SITE &quot;M14&quot; ;
-</Dynamic>
-            <Dynamic>LOCATE COMP &quot;LEDa[11]&quot; SITE &quot;M14&quot; ;
-</Dynamic>
-        </Message>
-    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>35002000</ID>

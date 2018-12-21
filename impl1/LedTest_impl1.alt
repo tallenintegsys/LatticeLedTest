@@ -1,11 +1,11 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Thu Dec 20 17:47:24 2018 *
+NOTE DATE CREATED: Thu Dec 20 20:29:18 2018 *
 NOTE DESIGN NAME: test *
 NOTE DEVICE NAME: LCMXO3LF-6900C-5CABGA256 *
 NOTE PIN ASSIGNMENTS *
 NOTE PINS LEDa[14] : H14 : out *
-NOTE PINS LEDa[13] : L9 : out *
+NOTE PINS LEDa[13] : J14 : out *
 NOTE PINS LEDa[15] : L15 : out *
 NOTE PINS LEDa[12] : K13 : out *
 NOTE PINS LEDa[11] : M14 : out *

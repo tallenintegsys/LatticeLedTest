@@ -14,7 +14,7 @@ Performance Grade:      5
 PACKAGE:          CABGA256
 Package Status:                     Final          Version 1.16
 
-Thu Dec 20 17:47:18 2018
+Thu Dec 20 20:29:12 2018
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------+
@@ -24,7 +24,7 @@ Pinout by Port Name:
 | LEDa[10]  | M15/1    | LVCMOS25_OUT | PR23B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
 | LEDa[11]  | M14/1    | LVCMOS25_OUT | PR23A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
 | LEDa[12]  | K13/1    | LVCMOS25_OUT | PR19C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
-| LEDa[13]  | L9/2     | LVCMOS25_OUT | PB18D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| LEDa[13]  | J14/1    | LVCMOS25_OUT | PR15B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
 | LEDa[14]  | H14/1    | LVCMOS25_OUT | PR12A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
 | LEDa[15]  | L15/1    | LVCMOS25_OUT | PR21A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
 | LEDa[1]   | L14/1    | LVCMOS25_OUT | PR18B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
@@ -185,7 +185,7 @@ Vccio by Bank:
 | J11/1    |     unused, PULL:DOWN |            |              | PR17C |                |           |           |
 | J12/1    |     unused, PULL:DOWN |            |              | PR11D |                |           |           |
 | J13/1    |     unused, PULL:DOWN |            |              | PR16D |                |           |           |
-| J14/1    |     unused, PULL:DOWN |            |              | PR15B |                |           |           |
+| J14/1    | LEDa[13]              | LOCATED    | LVCMOS25_OUT | PR15B |                |           |           |
 | J15/1    | LEDa[4]               | LOCATED    | LVCMOS25_OUT | PR16A | DQS1           |           |           |
 | J16/1    |     unused, PULL:DOWN |            |              | PR15A |                |           |           |
 | K1/4     |     unused, PULL:DOWN |            |              | PL15B |                |           |           |
@@ -207,7 +207,7 @@ Vccio by Bank:
 | L5/3     |     unused, PULL:DOWN |            |              | PL19D |                |           |           |
 | L7/2     |     unused, PULL:DOWN |            |              | PB10B |                |           |           |
 | L8/2     |     unused, PULL:DOWN |            |              | PB15B |                |           |           |
-| L9/2     | LEDa[13]              |            | LVCMOS25_OUT | PB18D |                |           |           |
+| L9/2     |     unused, PULL:DOWN |            |              | PB18D |                |           |           |
 | L10/2    |     unused, PULL:DOWN |            |              | PB26D |                |           |           |
 | L12/1    |     unused, PULL:DOWN |            |              | PR17D |                |           |           |
 | L13/1    |     unused, PULL:DOWN |            |              | PR21D |                |           |           |
@@ -431,7 +431,7 @@ LOCATE  COMP  "LEDa[0]"  SITE  "N16";
 LOCATE  COMP  "LEDa[10]"  SITE  "M15";
 LOCATE  COMP  "LEDa[11]"  SITE  "M14";
 LOCATE  COMP  "LEDa[12]"  SITE  "K13";
-LOCATE  COMP  "LEDa[13]"  SITE  "L9";
+LOCATE  COMP  "LEDa[13]"  SITE  "J14";
 LOCATE  COMP  "LEDa[14]"  SITE  "H14";
 LOCATE  COMP  "LEDa[15]"  SITE  "L15";
 LOCATE  COMP  "LEDa[1]"  SITE  "L14";
@@ -470,7 +470,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Dec 20 17:47:18 2018
+Thu Dec 20 20:29:12 2018
 
 
 
