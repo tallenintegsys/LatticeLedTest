@@ -1,5 +1,0 @@
-#Start recording tcl command: 12/21/2018 20:09:30
-#Project Location: /home/tallen/Projects/LatticeLedTest; Project name: LedTest
-prj_project open "/home/tallen/Projects/LatticeLedTest/LedTest.ldf"
-prj_run Export -impl impl1 -task Jedecgen -forceAll
-#Stop recording: 12/21/2018 21:26:27
