@@ -1,0 +1,4 @@
+#Start recording tcl command: 12/21/2018 19:57:58
+#Project Location: /home/tallen/Projects/LatticeLedTest; Project name: LedTest
+prj_project open "/home/tallen/Projects/LatticeLedTest/LedTest.ldf"
+#Stop recording: 12/21/2018 20:09:20

@@ -20,14 +20,15 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>/home/tallen/Projects/LatticeLedTest/impl1/LedTest_impl1.jed</File>
-			<FileTime>12/20/18 13:46:17</FileTime>
-			<JedecChecksum>0x5904</JedecChecksum>
+			<FileTime>12/21/18 12:42:45</FileTime>
+			<JedecChecksum>0xC573</JedecChecksum>
 			<Operation>FLASH Program</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
 				<IOState>HighZ</IOState>
 				<PreloadLength>664</PreloadLength>
 				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
+				<SVFProcessor>SVF Processor</SVFProcessor>
 				<Usercode>0x00000000</Usercode>
 				<AccessMode>FLASH</AccessMode>
 			</Option>

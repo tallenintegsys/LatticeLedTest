@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Dec 21 12:42:34 2018
+Fri Dec 21 21:36:23 2018
 
 
 Command Line:  synthesis -f LedTest_impl1_lattice.synproj -gui -msgset /home/tallen/Projects/LatticeLedTest/promote.xml 
@@ -89,8 +89,8 @@ Analyzing Verilog file /home/tallen/Projects/LatticeLedTest/source/test.v. VERI-
 Analyzing Verilog file /usr/local/diamond/3.10_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo3l.v. VERI-1482
 Top module name (Verilog): test
 INFO - synthesis: /home/tallen/Projects/LatticeLedTest/source/test.v(1): compiling module test. VERI-1018
-WARNING - synthesis: /home/tallen/Projects/LatticeLedTest/source/test.v(17): expression size 32 truncated to fit in target size 22. VERI-1209
-WARNING - synthesis: /home/tallen/Projects/LatticeLedTest/source/test.v(20): expression size 32 truncated to fit in target size 5. VERI-1209
+WARNING - synthesis: /home/tallen/Projects/LatticeLedTest/source/test.v(21): expression size 32 truncated to fit in target size 22. VERI-1209
+WARNING - synthesis: /home/tallen/Projects/LatticeLedTest/source/test.v(24): expression size 32 truncated to fit in target size 5. VERI-1209
 INFO - synthesis: /usr/local/diamond/3.10_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo3l.v(1759): compiling module OSCH(NOM_FREQ="12.09"). VERI-1018
 Loading NGL library '/usr/local/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library '/usr/local/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -99,16 +99,86 @@ Loading NGL library '/usr/local/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ng
 Loading device for application map from file 'xo3c6900.nph' in environment: /usr/local/diamond/3.10_x64/ispfpga.
 Package Status:                     Final          Version 1.16.
 Top-level module name = test.
+WARNING - synthesis: I/O Port LEDc[15] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDc[14] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDc[13] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDc[12] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDc[11] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDc[10] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDc[9] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDc[8] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDc[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDc[6] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDc[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDc[4] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDc[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDc[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDc[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDc[0] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[15] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[14] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[13] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[12] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[11] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[10] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[9] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[8] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[6] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[4] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port LEDd[0] 's net has no driver and is unused.
+######## Missing driver on net LEDc[15]. Patching with GND.
+######## Missing driver on net LEDc[14]. Patching with GND.
+######## Missing driver on net LEDc[13]. Patching with GND.
+######## Missing driver on net LEDc[12]. Patching with GND.
+######## Missing driver on net LEDc[11]. Patching with GND.
+######## Missing driver on net LEDc[10]. Patching with GND.
+######## Missing driver on net LEDc[9]. Patching with GND.
+######## Missing driver on net LEDc[8]. Patching with GND.
+######## Missing driver on net LEDc[7]. Patching with GND.
+######## Missing driver on net LEDc[6]. Patching with GND.
+######## Missing driver on net LEDc[5]. Patching with GND.
+######## Missing driver on net LEDc[4]. Patching with GND.
+######## Missing driver on net LEDc[3]. Patching with GND.
+######## Missing driver on net LEDc[2]. Patching with GND.
+######## Missing driver on net LEDc[1]. Patching with GND.
+######## Missing driver on net LEDc[0]. Patching with GND.
+######## Missing driver on net LEDd[15]. Patching with GND.
+######## Missing driver on net LEDd[14]. Patching with GND.
+######## Missing driver on net LEDd[13]. Patching with GND.
+######## Missing driver on net LEDd[12]. Patching with GND.
+######## Missing driver on net LEDd[11]. Patching with GND.
+######## Missing driver on net LEDd[10]. Patching with GND.
+######## Missing driver on net LEDd[9]. Patching with GND.
+######## Missing driver on net LEDd[8]. Patching with GND.
+######## Missing driver on net LEDd[7]. Patching with GND.
+######## Missing driver on net LEDd[6]. Patching with GND.
+######## Missing driver on net LEDd[5]. Patching with GND.
+######## Missing driver on net LEDd[4]. Patching with GND.
+######## Missing driver on net LEDd[3]. Patching with GND.
+######## Missing driver on net LEDd[2]. Patching with GND.
+######## Missing driver on net LEDd[1]. Patching with GND.
+######## Missing driver on net LEDd[0]. Patching with GND.
 
 
 
 GSR will not be inferred because no asynchronous signal was found in the netlist.
-Duplicate register/latch removal. charb_i0_i1 is a one-to-one match with charb_i0_i3.
-Duplicate register/latch removal. charb_i0_i16 is a one-to-one match with charb_i0_i15.
-Duplicate register/latch removal. charb_i0_i6 is a one-to-one match with charb_i0_i4.
-Duplicate register/latch removal. chara_i0_i16 is a one-to-one match with chara_i0_i15.
-Duplicate register/latch removal. chara_i0_i6 is a one-to-one match with chara_i0_i4.
-Duplicate register/latch removal. chara_i0_i3 is a one-to-one match with chara_i0_i1.
+Duplicate register/latch removal. char_d_i0_i5 is a one-to-one match with char_d_i0_i3.
+Duplicate register/latch removal. char_d_i0_i2 is a one-to-one match with char_d_i0_i0.
+Duplicate register/latch removal. char_d_i0_i15 is a one-to-one match with char_d_i0_i14.
+Duplicate register/latch removal. char_c_i0_i15 is a one-to-one match with char_c_i0_i14.
+Duplicate register/latch removal. char_c_i0_i0 is a one-to-one match with char_c_i0_i2.
+Duplicate register/latch removal. char_c_i0_i5 is a one-to-one match with char_c_i0_i3.
+Duplicate register/latch removal. char_b_i0_i16 is a one-to-one match with char_b_i0_i15.
+Duplicate register/latch removal. char_b_i0_i1 is a one-to-one match with char_b_i0_i3.
+Duplicate register/latch removal. char_b_i0_i6 is a one-to-one match with char_b_i0_i4.
+Duplicate register/latch removal. char_a_i0_i16 is a one-to-one match with char_a_i0_i15.
+Duplicate register/latch removal. char_a_i0_i6 is a one-to-one match with char_a_i0_i4.
+Duplicate register/latch removal. char_a_i0_i3 is a one-to-one match with char_a_i0_i1.
 Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
@@ -121,14 +191,15 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file LedTest_impl1.ngd.
 
 ################### Begin Area Report (test)######################
-Number of register bits => 53 of 7485 (0 % )
+Number of register bits => 79 of 7485 (1 % )
 CCU2D => 12
-FD1P3AX => 29
+FD1P3AX => 55
 FD1P3JX => 1
 FD1S3AX => 23
 GSR => 1
-LUT4 => 139
-OB => 32
+L6MUX21 => 1
+LUT4 => 140
+OB => 64
 OSCH => 1
 PFUMX => 7
 ################### End Area Report ##################
@@ -140,25 +211,26 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : clk, loads : 53
+  Net : clk, loads : 79
 Clock Enable Nets
-Number of Clock Enables: 3
-Top 3 highest fanout Clock Enables:
-  Net : clk_enable_30, loads : 14
-  Net : clk_enable_15, loads : 13
-  Net : clk_enable_19, loads : 7
+Number of Clock Enables: 4
+Top 4 highest fanout Clock Enables:
+  Net : clk_enable_47, loads : 26
+  Net : clk_enable_52, loads : 14
+  Net : clk_enable_40, loads : 13
+  Net : clk_enable_56, loads : 8
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : step_0, loads : 38
-  Net : step_3, loads : 35
-  Net : step_2, loads : 35
-  Net : step_1, loads : 35
-  Net : step_4, loads : 28
-  Net : clk_enable_30, loads : 14
-  Net : n7355, loads : 13
-  Net : n6960, loads : 13
-  Net : clk_enable_15, loads : 13
-  Net : step_4_N_60_4, loads : 9
+  Net : step_1, loads : 39
+  Net : step_0, loads : 36
+  Net : step_2, loads : 30
+  Net : step_3, loads : 29
+  Net : step_4, loads : 26
+  Net : clk_enable_47, loads : 26
+  Net : clk_enable_52, loads : 14
+  Net : clk_enable_40, loads : 13
+  Net : n73216, loads : 13
+  Net : n76623, loads : 12
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -168,7 +240,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clk]                     |  200.000 MHz|   55.897 MHz|    12 *
+clk0 [get_nets clk]                     |  200.000 MHz|   51.351 MHz|    14 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -176,10 +248,10 @@ clk0 [get_nets clk]                     |  200.000 MHz|   55.897 MHz|    12 *
 1 constraints not met.
 
 
-Peak Memory Usage: 201.113  MB
+Peak Memory Usage: 1369.961  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.931  secs
+Elapsed CPU time for LSE flow : 44.192  secs
 --------------------------------------------------------------
 
 

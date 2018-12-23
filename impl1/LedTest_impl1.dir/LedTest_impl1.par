@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Dec 21 12:42:36 2018
+Fri Dec 21 20:10:18 2018
 
 /usr/local/diamond/3.10_x64/ispfpga/bin/lin64/par -f LedTest_impl1.p2t
 LedTest_impl1_map.ncd LedTest_impl1.dir LedTest_impl1.prf -gui -msgset
