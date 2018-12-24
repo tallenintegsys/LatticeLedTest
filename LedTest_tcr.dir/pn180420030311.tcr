@@ -1,6 +1,0 @@
-#Start recording tcl command: 4/20/2018 03:02:59
-#Project Location: /home/tallen/Projects/LatticeLedTest; Project name: LedTest
-prj_project new -name "LedTest" -impl "impl1" -dev LCMXO3LF-6900C-5BG256C -synthesis "lse"
-prj_project save
-prj_project close
-#Stop recording: 4/20/2018 03:03:11
