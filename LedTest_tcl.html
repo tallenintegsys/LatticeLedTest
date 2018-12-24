@@ -88,6 +88,33 @@ prj_run Export -impl impl1 -task Jedecgen -forceAll
 
 
 
+<A name="pn181223144303"></A><B><U><big>pn181223144303</big></U></B>
+#Start recording tcl command: 12/21/2018 21:26:43
+#Project Location: /home/tallen/Projects/LatticeLedTest; Project name: LedTest
+prj_project open "/home/tallen/Projects/LatticeLedTest/LedTest.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis -forceOne
+pgr_project open "/home/tallen/Projects/LatticeLedTest/impl1/impl1.xcf"
+pgr_project close
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis -forceOne
+pwc_command new
+pwc_command exit
+pgr_project open "/home/tallen/Projects/LatticeLedTest/impl1/impl1.xcf"
+pgr_project close
+prj_run Export -impl impl1 -task Jedecgen -forceAll
+pgr_project open "/home/tallen/Projects/LatticeLedTest/impl1/impl1.xcf"
+pgr_project close
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project open "/home/tallen/Projects/LatticeLedTest/impl1/impl1.xcf"
+pgr_project close
+prj_run Export -impl impl1 -task Jedecgen -forceAll
+prj_project save
+prj_project close
+#Stop recording: 12/23/2018 14:43:03
+
+
+
 <BR>
 <BR>
 <BR>

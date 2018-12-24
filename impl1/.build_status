@@ -6,41 +6,41 @@
             <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="0"/>
             <Task name="Bitgen" build_result="0" update_result="2" update_time="1545253730"/>
-            <Task name="Jedecgen" build_result="0" update_result="2" update_time="1545441027"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1545622870"/>
             <Task name="Jedec4Xo3l" build_result="0" update_result="2" update_time="0"/>
             <Task name="Bitgen4Xo3l" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="0" build_time="1545441018">
-            <Task name="Map" build_result="0" update_result="2" update_time="1545441018"/>
-            <Task name="MapTrace" build_result="0" update_result="2" update_time="1545441018"/>
+        <Milestone name="Map" build_result="2" build_time="1545622861">
+            <Task name="Map" build_result="2" update_result="0" update_time="1545622861"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1545622861"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="0" build_time="1545441024">
-            <Task name="PAR" build_result="0" update_result="2" update_time="1545441024"/>
-            <Task name="PARTrace" build_result="0" update_result="2" update_time="1545441025"/>
+        <Milestone name="PAR" build_result="2" build_time="1545622867">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1545622867"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1545622868"/>
             <Task name="IOTiming" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1545446227">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1545446227"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1545446227"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1545622860">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1545622860"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1545622870"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1545446105"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1545622850"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Report name=".vdbs/LedTest_impl1_map.vdb" last_build_time="1545441018" last_build_size="76285"/>
-        <Report name="LedTest_impl1.bgn" last_build_time="1545441027" last_build_size="4300"/>
+        <Report name=".vdbs/LedTest_impl1_map.vdb" last_build_time="1545622861" last_build_size="62952"/>
+        <Report name="LedTest_impl1.bgn" last_build_time="1545622870" last_build_size="4300"/>
         <Report name="LedTest_impl1.bit" last_build_time="1545253730" last_build_size="26209"/>
-        <Report name="LedTest_impl1.jed" last_build_time="1545441027" last_build_size="1454125"/>
-        <Report name="LedTest_impl1.lsedata" last_build_time="1545446183" last_build_size="667636"/>
-        <Report name="LedTest_impl1.ncd" last_build_time="1545441024" last_build_size="174805"/>
-        <Report name="LedTest_impl1.ngd" last_build_time="1545446227" last_build_size="159262"/>
-        <Report name="LedTest_impl1.tw1" last_build_time="1545441018" last_build_size="8740"/>
-        <Report name="LedTest_impl1.twr" last_build_time="1545441025" last_build_size="50741"/>
-        <Report name="LedTest_impl1_map.ncd" last_build_time="1545441017" last_build_size="119986"/>
+        <Report name="LedTest_impl1.jed" last_build_time="1545622870" last_build_size="1455113"/>
+        <Report name="LedTest_impl1.lsedata" last_build_time="1545622859" last_build_size="409262"/>
+        <Report name="LedTest_impl1.ncd" last_build_time="1545622867" last_build_size="110077"/>
+        <Report name="LedTest_impl1.ngd" last_build_time="1545622860" last_build_size="83520"/>
+        <Report name="LedTest_impl1.tw1" last_build_time="1545622861" last_build_size="8270"/>
+        <Report name="LedTest_impl1.twr" last_build_time="1545622868" last_build_size="46077"/>
+        <Report name="LedTest_impl1_map.ncd" last_build_time="1545622860" last_build_size="81197"/>
     </Strategy>
 </BuildStatus>

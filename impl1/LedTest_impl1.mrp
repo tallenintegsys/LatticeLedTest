@@ -15,24 +15,24 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO3LF-6900CCABGA256
 Target Performance:   5
 Mapper:  xo3c00f,  version:  Diamond (64-bit) 3.10.3.144
-Mapped on:  12/21/18  20:10:17
+Mapped on:  12/23/18  22:41:00
 
 Design Summary
 --------------
 
-   Number of registers:     53 out of  7485 (1%)
-      PFU registers:           53 out of  6864 (1%)
+   Number of registers:     46 out of  7485 (1%)
+      PFU registers:           46 out of  6864 (1%)
       PIO registers:            0 out of   621 (0%)
-   Number of SLICEs:        82 out of  3432 (2%)
-      SLICEs as Logic/ROM:     82 out of  3432 (2%)
+   Number of SLICEs:        32 out of  3432 (1%)
+      SLICEs as Logic/ROM:     32 out of  3432 (1%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:         12 out of  3432 (0%)
-   Number of LUT4s:        163 out of  6864 (2%)
-      Number used as logic LUTs:        139
+      SLICEs as Carry:         13 out of  3432 (0%)
+   Number of LUT4s:         57 out of  6864 (1%)
+      Number used as logic LUTs:         31
       Number used as distributed RAM:     0
-      Number used as ripple logic:       24
+      Number used as ripple logic:       26
       Number used as shift registers:     0
-   Number of PIO sites used: 32 + 4(JTAG) out of 207 (17%)
+   Number of PIO sites used: 64 + 4(JTAG) out of 207 (33%)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:  0 out of 1 (0%)
    EFB used :       No
@@ -58,35 +58,35 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  1
-     Net clk: 29 loads, 29 rising, 0 falling (Driver: OSCH_inst )
-   Number of Clock Enables:  3
+     Net clk: 28 loads, 28 rising, 0 falling (Driver: OSCH_inst )
+   Number of Clock Enables:  2
 
                                     Page 1
 
 
 
 
-Design:  test                                          Date:  12/21/18  20:10:17
+Design:  test                                          Date:  12/23/18  22:41:00
 
 Design Summary (cont)
 ---------------------
-     Net clk_enable_30: 7 loads, 7 LSLICEs
-     Net clk_enable_15: 7 loads, 7 LSLICEs
-     Net clk_enable_19: 2 loads, 2 LSLICEs
-   Number of LSRs:  1
-     Net n8191: 1 loads, 1 LSLICEs
+     Net clk_enable_21: 12 loads, 12 LSLICEs
+     Net clk_enable_18: 3 loads, 3 LSLICEs
+   Number of LSRs:  2
+     Net n3666: 4 loads, 4 LSLICEs
+     Net n3675: 7 loads, 7 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net step_0: 38 loads
-     Net step_1: 35 loads
-     Net step_2: 35 loads
-     Net step_3: 35 loads
-     Net step_4: 28 loads
-     Net n6960: 13 loads
-     Net n7355: 13 loads
-     Net n9911: 9 loads
-     Net n9935: 9 loads
-     Net step_4_N_60_4: 9 loads
+     Net clk_enable_21: 14 loads
+     Net step_1: 14 loads
+     Net step_2: 13 loads
+     Net step_3: 12 loads
+     Net step_0: 10 loads
+     Net n3675: 7 loads
+     Net LEDd_c: 4 loads
+     Net n3352: 4 loads
+     Net n3361: 4 loads
+     Net n3363: 4 loads
 
 
 
@@ -107,7 +107,81 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| LEDa[15]            | OUTPUT    | LVCMOS25  |            |
+| LEDa[14]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDd[0]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDd[1]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDd[2]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDd[3]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDd[4]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDd[5]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDd[6]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDd[7]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDd[8]             | OUTPUT    | LVCMOS25  |            |
+
+                                    Page 2
+
+
+
+
+Design:  test                                          Date:  12/23/18  22:41:00
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| LEDd[9]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDd[10]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDd[11]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDd[12]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDd[13]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDd[14]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDd[15]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[0]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[1]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[2]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[3]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[4]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[5]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[6]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[7]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[8]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[9]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[10]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[11]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[12]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[13]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[14]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDc[15]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | LEDb[0]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -118,6 +192,16 @@ IO (PIO) Attributes
 | LEDb[3]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | LEDb[4]             | OUTPUT    | LVCMOS25  |            |
+
+                                    Page 3
+
+
+
+
+Design:  test                                          Date:  12/23/18  22:41:00
+
+IO (PIO) Attributes (cont)
+--------------------------
 +---------------------+-----------+-----------+------------+
 | LEDb[5]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -126,16 +210,6 @@ IO (PIO) Attributes
 | LEDb[7]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | LEDb[8]             | OUTPUT    | LVCMOS25  |            |
-
-                                    Page 2
-
-
-
-
-Design:  test                                          Date:  12/21/18  20:10:17
-
-IO (PIO) Attributes (cont)
---------------------------
 +---------------------+-----------+-----------+------------+
 | LEDb[9]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -163,6 +237,8 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | LEDa[5]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+| LEDa[15]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
 | LEDa[6]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | LEDa[7]             | OUTPUT    | LVCMOS25  |            |
@@ -179,8 +255,16 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | LEDa[13]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| LEDa[14]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
+
+
+
+
+                                    Page 4
+
+
+
+
+Design:  test                                          Date:  12/23/18  22:41:00
 
 Removed logic
 -------------
@@ -189,20 +273,9 @@ Block i2 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
 Signal GND_net undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal add_102_1/S0 undriven or does not drive anything - clipped.
-Signal add_102_1/CI undriven or does not drive anything - clipped.
-Signal add_102_23/S1 undriven or does not drive anything - clipped.
-
-                                    Page 3
-
-
-
-
-Design:  test                                          Date:  12/21/18  20:10:17
-
-Removed logic (cont)
---------------------
-Signal add_102_23/CO undriven or does not drive anything - clipped.
+Signal count_489_add_4_25/CO undriven or does not drive anything - clipped.
+Signal count_489_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal count_489_add_4_1/CI undriven or does not drive anything - clipped.
 Block i1 was optimized away.
 
 Memory Usage
@@ -232,7 +305,7 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 195 MB
+   Peak Memory Usage: 196 MB
         
 
 
@@ -252,14 +325,7 @@ Run Time and Memory Usage
 
 
 
-
-
-
-
-
-
-
-                                    Page 4
+                                    Page 5
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
