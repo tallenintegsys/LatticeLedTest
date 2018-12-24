@@ -15,7 +15,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO3LF-6900CCABGA256
 Target Performance:   5
 Mapper:  xo3c00f,  version:  Diamond (64-bit) 3.10.3.144
-Mapped on:  12/23/18  23:31:20
+Mapped on:  12/24/18  00:33:38
 
 Design Summary
 --------------
@@ -23,12 +23,12 @@ Design Summary
    Number of registers:     80 out of  7485 (1%)
       PFU registers:           80 out of  6864 (1%)
       PIO registers:            0 out of   621 (0%)
-   Number of SLICEs:        82 out of  3432 (2%)
-      SLICEs as Logic/ROM:     82 out of  3432 (2%)
+   Number of SLICEs:        88 out of  3432 (3%)
+      SLICEs as Logic/ROM:     88 out of  3432 (3%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:         12 out of  3432 (0%)
-   Number of LUT4s:        163 out of  6864 (2%)
-      Number used as logic LUTs:        139
+   Number of LUT4s:        175 out of  6864 (3%)
+      Number used as logic LUTs:        151
       Number used as distributed RAM:     0
       Number used as ripple logic:       24
       Number used as shift registers:     0
@@ -58,36 +58,34 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  1
-     Net clk: 42 loads, 42 rising, 0 falling (Driver: OSCH_inst )
-   Number of Clock Enables:  4
+     Net clk: 46 loads, 46 rising, 0 falling (Driver: OSCH_inst )
+   Number of Clock Enables:  3
 
                                     Page 1
 
 
 
 
-Design:  test                                          Date:  12/23/18  23:31:20
+Design:  test                                          Date:  12/24/18  00:33:38
 
 Design Summary (cont)
 ---------------------
-     Net clk_enable_52: 7 loads, 7 LSLICEs
-     Net clk_enable_45: 13 loads, 13 LSLICEs
-     Net clk_enable_41: 7 loads, 7 LSLICEs
-     Net clk_enable_56: 2 loads, 2 LSLICEs
-   Number of LSRs:  1
-     Net n74759: 1 loads, 1 LSLICEs
+     Net clk_enable_56: 20 loads, 20 LSLICEs
+     Net clk_enable_42: 11 loads, 11 LSLICEs
+     Net clk_enable_55: 2 loads, 2 LSLICEs
+   Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net step_0: 38 loads
-     Net step_1: 37 loads
-     Net step_3: 26 loads
-     Net step_2: 25 loads
-     Net step_4: 21 loads
-     Net clk_enable_45: 13 loads
-     Net n73103: 13 loads
-     Net n73862: 13 loads
-     Net n14: 9 loads
-     Net n76696: 9 loads
+     Net step_1: 33 loads
+     Net step_4: 33 loads
+     Net step_0: 31 loads
+     Net step_2: 30 loads
+     Net step_3: 27 loads
+     Net clk_enable_56: 20 loads
+     Net n91995: 15 loads
+     Net n15: 14 loads
+     Net n91543: 13 loads
+     Net clk_enable_42: 11 loads
 
 
 
@@ -126,18 +124,18 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+------------+
 | LEDd[7]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+| LEDd[8]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
 
                                     Page 2
 
 
 
 
-Design:  test                                          Date:  12/23/18  23:31:20
+Design:  test                                          Date:  12/24/18  00:33:38
 
 IO (PIO) Attributes (cont)
 --------------------------
-| LEDd[8]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
 | LEDd[9]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | LEDd[10]            | OUTPUT    | LVCMOS25  |            |
@@ -192,18 +190,18 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | LEDb[3]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+| LEDb[4]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
 
                                     Page 3
 
 
 
 
-Design:  test                                          Date:  12/23/18  23:31:20
+Design:  test                                          Date:  12/24/18  00:33:38
 
 IO (PIO) Attributes (cont)
 --------------------------
-| LEDb[4]             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
 | LEDb[5]             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | LEDb[6]             | OUTPUT    | LVCMOS25  |            |
@@ -259,25 +257,25 @@ IO (PIO) Attributes (cont)
 
 
 
+
+
                                     Page 4
 
 
 
 
-Design:  test                                          Date:  12/23/18  23:31:20
+Design:  test                                          Date:  12/24/18  00:33:38
 
 Removed logic
 -------------
 
 Block i2 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
-Signal n76711 was merged into signal n76665
 Signal GND_net undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal add_165_23/CO undriven or does not drive anything - clipped.
-Signal add_165_1/S0 undriven or does not drive anything - clipped.
-Signal add_165_1/CI undriven or does not drive anything - clipped.
-Block i2_4_lut_else_4_lut_adj_16 was optimized away.
+Signal add_175_23/CO undriven or does not drive anything - clipped.
+Signal add_175_1/S0 undriven or does not drive anything - clipped.
+Signal add_175_1/CI undriven or does not drive anything - clipped.
 Block i1 was optimized away.
 
 Memory Usage
@@ -309,6 +307,8 @@ Run Time and Memory Usage
    Total REAL Time: 0 secs  
    Peak Memory Usage: 196 MB
         
+
+
 
 
 

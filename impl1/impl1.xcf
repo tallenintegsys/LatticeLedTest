@@ -20,8 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>/home/tallen/Projects/LatticeLedTest/impl1/LedTest_impl1.jed</File>
-			<FileTime>12/23/18 23:31:34</FileTime>
-			<JedecChecksum>0x9BF7</JedecChecksum>
+			<FileTime>12/24/18 00:33:51</FileTime>
+			<JedecChecksum>0xE34D</JedecChecksum>
 			<Operation>FLASH Program</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

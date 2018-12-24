@@ -30,7 +30,6 @@ begin
 			char_b = char_c;
 			char_c = char_d;
 			char_d = 16'b0011000011111111; //C
-			char_d = 16'b1100111100000000; //C
 		end
 		if (step == 2)
 		begin
@@ -218,6 +217,20 @@ begin
 			char_d = 16'b1111111111111111; // 
 		end
 		if (step == 28)
+		begin
+			char_a = char_b;
+			char_b = char_c;
+			char_c = char_d;
+			char_d = 16'b1111111111111111; // 
+		end
+		if (step == 29)
+		begin
+			char_a = char_b;
+			char_b = char_c;
+			char_c = char_d;
+			char_d = 16'b1111111111111111; // 
+		end
+		if (step == 30)
 		begin
 			char_a = char_b;
 			char_b = char_c;

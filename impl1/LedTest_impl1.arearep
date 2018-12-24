@@ -5,12 +5,11 @@ I/O cells:      64
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2D        12          100.0
-                            FD1P3AX        55          100.0
-                            FD1P3JX         1          100.0
+                            FD1P3AX        56          100.0
                             FD1S3AX        24          100.0
                                 GSR         1          100.0
-                               LUT4       139          100.0
+                               LUT4       151          100.0
                                  OB        64          100.0
                                OSCH         1          100.0
-                              PFUMX         5          100.0
-                              TOTAL       302
+                              PFUMX        11          100.0
+                              TOTAL       320
