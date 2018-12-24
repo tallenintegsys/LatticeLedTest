@@ -22,7 +22,7 @@
             <Severity>Warning</Severity>
             <Dynamic>/home/tallen/Projects/LatticeLedTest/source/test.v(23): </Dynamic>
             <Dynamic>32</Dynamic>
-            <Dynamic>25</Dynamic>
+            <Dynamic>23</Dynamic>
             <Navigation>/home/tallen/Projects/LatticeLedTest/source/test.v</Navigation>
             <Navigation>23</Navigation>
         </Message>

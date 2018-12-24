@@ -1,15 +1,16 @@
 ----------------------------------------------------------------------
 Report for cell test.TECH
-Register bits:  46 of 7485 (0.615%)
+Register bits:  80 of 7485 (1.069%)
 I/O cells:      64
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        13          100.0
-                            FD1P3AX         7          100.0
-                            FD1P3JX        14          100.0
-                            FD1S3AX        25          100.0
+                              CCU2D        12          100.0
+                            FD1P3AX        55          100.0
+                            FD1P3JX         1          100.0
+                            FD1S3AX        24          100.0
                                 GSR         1          100.0
-                               LUT4        31          100.0
+                               LUT4       139          100.0
                                  OB        64          100.0
                                OSCH         1          100.0
-                              TOTAL       156
+                              PFUMX         5          100.0
+                              TOTAL       302

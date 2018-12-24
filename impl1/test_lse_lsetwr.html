@@ -9,7 +9,7 @@
 <PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Sun Dec 23 22:41:00 2018
+Sun Dec 23 23:31:20 2018
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -28,118 +28,160 @@ Report level:    verbose report, limited to 3 items per constraint
 
 ================================================================================
 Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk]
-            1442 items scored, 966 timing errors detected.
+            4096 items scored, 4096 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Error:  The following path violates requirements by 5.597ns
+Error:  The following path violates requirements by 16.733ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AX    CK             count_489__i0  (from clk +)
-   Destination:    FD1P3JX    PD             char_a_i0_i15  (to clk +)
+   Source:         FD1S3AX    CK             step_i0_i0  (from clk +)
+   Destination:    FD1P3AX    D              char_c_i0_i5  (to clk +)
 
-   Delay:                  10.451ns  (29.6% logic, 70.4% route), 7 logic levels.
+   Delay:                  21.587ns  (28.8% logic, 71.2% route), 14 logic levels.
 
  Constraint Details:
 
-     10.451ns data_path count_489__i0 to char_a_i0_i15 violates
+     21.587ns data_path step_i0_i0 to char_c_i0_i5 violates
       5.000ns delay constraint less
-      0.146ns L_S requirement (totaling 4.854ns) by 5.597ns
+      0.146ns L_S requirement (totaling 4.854ns) by 16.733ns
 
- Path Details: count_489__i0 to char_a_i0_i15
+ Path Details: step_i0_i0 to char_c_i0_i5
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              count_489__i0 (from clk)
-Route         2   e 1.002                                  count[0]
-LUT4        ---     0.448              C to Z              i17_4_lut
-Route         1   e 0.788                                  n42
-LUT4        ---     0.448              B to Z              i21_4_lut
-Route         1   e 0.788                                  n46
-LUT4        ---     0.448              B to Z              i23_4_lut
-Route         1   e 0.788                                  n48
-LUT4        ---     0.448              B to Z              i24_4_lut
-Route         6   e 1.218                                  clk_enable_18
-LUT4        ---     0.448              A to Z              i1_4_lut
-Route        18   e 1.521                                  clk_enable_21
-LUT4        ---     0.448              A to Z              i786_2_lut
-Route         7   e 1.255                                  n3666
+L_CO        ---     0.403             CK to Q              step_i0_i0 (from clk)
+Route        38   e 1.759                                  step[0]
+LUT4        ---     0.448              A to Z              i1_2_lut_rep_72
+Route         9   e 1.315                                  n76696
+LUT4        ---     0.448              B to Z              i71213_2_lut_3_lut_4_lut
+Route         4   e 1.120                                  n5
+LUT4        ---     0.448              B to Z              i5_3_lut_rep_52_4_lut_4_lut
+Route         5   e 1.174                                  n76676
+LUT4        ---     0.448              A to Z              n76676_bdd_4_lut
+Route         2   e 0.954                                  n76438
+LUT4        ---     0.448              C to Z              i1_4_lut_adj_4
+Route         4   e 1.120                                  n74706
+LUT4        ---     0.448              B to Z              i1_2_lut_rep_38
+Route         3   e 1.051                                  n76662
+LUT4        ---     0.448              B to Z              i1_3_lut_rep_34_4_lut
+Route         7   e 1.255                                  n76658
+LUT4        ---     0.448              A to Z              i1_2_lut_3_lut
+Route         2   e 0.954                                  n76435
+LUT4        ---     0.448              B to Z              i3_4_lut_adj_8
+Route         1   e 0.788                                  n76436
+LUT4        ---     0.448              D to Z              i3_3_lut_4_lut
+Route         1   e 0.788                                  n28_adj_1
+LUT4        ---     0.448              C to Z              i20_4_lut
+Route         1   e 0.788                                  n45
+LUT4        ---     0.448              C to Z              i1_4_lut_adj_7
+Route        13   e 1.506                                  n73103
+LUT4        ---     0.448              C to Z              mux_70592_i5_4_lut
+Route         1   e 0.788                                  n73482
                   --------
-                   10.451  (29.6% logic, 70.4% route), 7 logic levels.
+                   21.587  (28.8% logic, 71.2% route), 14 logic levels.
 
 
-Error:  The following path violates requirements by 5.597ns
+Error:  The following path violates requirements by 16.733ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AX    CK             count_489__i0  (from clk +)
-   Destination:    FD1P3JX    PD             char_a_i0_i12  (to clk +)
+   Source:         FD1S3AX    CK             step_i0_i0  (from clk +)
+   Destination:    FD1P3AX    D              char_c_i0_i5  (to clk +)
 
-   Delay:                  10.451ns  (29.6% logic, 70.4% route), 7 logic levels.
+   Delay:                  21.587ns  (28.8% logic, 71.2% route), 14 logic levels.
 
  Constraint Details:
 
-     10.451ns data_path count_489__i0 to char_a_i0_i12 violates
+     21.587ns data_path step_i0_i0 to char_c_i0_i5 violates
       5.000ns delay constraint less
-      0.146ns L_S requirement (totaling 4.854ns) by 5.597ns
+      0.146ns L_S requirement (totaling 4.854ns) by 16.733ns
 
- Path Details: count_489__i0 to char_a_i0_i12
+ Path Details: step_i0_i0 to char_c_i0_i5
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              count_489__i0 (from clk)
-Route         2   e 1.002                                  count[0]
-LUT4        ---     0.448              C to Z              i17_4_lut
-Route         1   e 0.788                                  n42
-LUT4        ---     0.448              B to Z              i21_4_lut
-Route         1   e 0.788                                  n46
-LUT4        ---     0.448              B to Z              i23_4_lut
-Route         1   e 0.788                                  n48
-LUT4        ---     0.448              B to Z              i24_4_lut
-Route         6   e 1.218                                  clk_enable_18
-LUT4        ---     0.448              A to Z              i1_4_lut
-Route        18   e 1.521                                  clk_enable_21
-LUT4        ---     0.448              A to Z              i782_2_lut
-Route         7   e 1.255                                  n3675
+L_CO        ---     0.403             CK to Q              step_i0_i0 (from clk)
+Route        38   e 1.759                                  step[0]
+LUT4        ---     0.448              A to Z              i1_2_lut_rep_72
+Route         9   e 1.315                                  n76696
+LUT4        ---     0.448              B to Z              i71213_2_lut_3_lut_4_lut
+Route         4   e 1.120                                  n5
+LUT4        ---     0.448              B to Z              i5_3_lut_rep_52_4_lut_4_lut
+Route         5   e 1.174                                  n76676
+LUT4        ---     0.448              B to Z              i2_2_lut_rep_43_3_lut_4_lut
+Route         2   e 0.954                                  n76667
+LUT4        ---     0.448              D to Z              i1_4_lut_adj_4
+Route         4   e 1.120                                  n74706
+LUT4        ---     0.448              B to Z              i1_2_lut_rep_38
+Route         3   e 1.051                                  n76662
+LUT4        ---     0.448              B to Z              i1_3_lut_rep_34_4_lut
+Route         7   e 1.255                                  n76658
+LUT4        ---     0.448              A to Z              i1_2_lut_3_lut
+Route         2   e 0.954                                  n76435
+LUT4        ---     0.448              B to Z              i3_4_lut_adj_8
+Route         1   e 0.788                                  n76436
+LUT4        ---     0.448              D to Z              i3_3_lut_4_lut
+Route         1   e 0.788                                  n28_adj_1
+LUT4        ---     0.448              C to Z              i20_4_lut
+Route         1   e 0.788                                  n45
+LUT4        ---     0.448              C to Z              i1_4_lut_adj_7
+Route        13   e 1.506                                  n73103
+LUT4        ---     0.448              C to Z              mux_70592_i5_4_lut
+Route         1   e 0.788                                  n73482
                   --------
-                   10.451  (29.6% logic, 70.4% route), 7 logic levels.
+                   21.587  (28.8% logic, 71.2% route), 14 logic levels.
 
 
-Error:  The following path violates requirements by 5.597ns
+Error:  The following path violates requirements by 16.733ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AX    CK             count_489__i0  (from clk +)
-   Destination:    FD1P3JX    PD             char_a_i0_i10  (to clk +)
+   Source:         FD1S3AX    CK             step_i0_i0  (from clk +)
+   Destination:    FD1P3AX    D              char_c_i0_i6  (to clk +)
 
-   Delay:                  10.451ns  (29.6% logic, 70.4% route), 7 logic levels.
+   Delay:                  21.587ns  (28.8% logic, 71.2% route), 14 logic levels.
 
  Constraint Details:
 
-     10.451ns data_path count_489__i0 to char_a_i0_i10 violates
+     21.587ns data_path step_i0_i0 to char_c_i0_i6 violates
       5.000ns delay constraint less
-      0.146ns L_S requirement (totaling 4.854ns) by 5.597ns
+      0.146ns L_S requirement (totaling 4.854ns) by 16.733ns
 
- Path Details: count_489__i0 to char_a_i0_i10
+ Path Details: step_i0_i0 to char_c_i0_i6
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              count_489__i0 (from clk)
-Route         2   e 1.002                                  count[0]
-LUT4        ---     0.448              C to Z              i17_4_lut
-Route         1   e 0.788                                  n42
-LUT4        ---     0.448              B to Z              i21_4_lut
-Route         1   e 0.788                                  n46
-LUT4        ---     0.448              B to Z              i23_4_lut
-Route         1   e 0.788                                  n48
-LUT4        ---     0.448              B to Z              i24_4_lut
-Route         6   e 1.218                                  clk_enable_18
-LUT4        ---     0.448              A to Z              i1_4_lut
-Route        18   e 1.521                                  clk_enable_21
-LUT4        ---     0.448              A to Z              i782_2_lut
-Route         7   e 1.255                                  n3675
+L_CO        ---     0.403             CK to Q              step_i0_i0 (from clk)
+Route        38   e 1.759                                  step[0]
+LUT4        ---     0.448              A to Z              i1_2_lut_rep_72
+Route         9   e 1.315                                  n76696
+LUT4        ---     0.448              B to Z              i71213_2_lut_3_lut_4_lut
+Route         4   e 1.120                                  n5
+LUT4        ---     0.448              B to Z              i5_3_lut_rep_52_4_lut_4_lut
+Route         5   e 1.174                                  n76676
+LUT4        ---     0.448              B to Z              i2_2_lut_rep_43_3_lut_4_lut
+Route         2   e 0.954                                  n76667
+LUT4        ---     0.448              D to Z              i1_4_lut_adj_4
+Route         4   e 1.120                                  n74706
+LUT4        ---     0.448              B to Z              i1_2_lut_rep_38
+Route         3   e 1.051                                  n76662
+LUT4        ---     0.448              B to Z              i1_3_lut_rep_34_4_lut
+Route         7   e 1.255                                  n76658
+LUT4        ---     0.448              A to Z              i1_2_lut_3_lut
+Route         2   e 0.954                                  n76435
+LUT4        ---     0.448              B to Z              i3_4_lut_adj_8
+Route         1   e 0.788                                  n76436
+LUT4        ---     0.448              D to Z              i3_3_lut_4_lut
+Route         1   e 0.788                                  n28_adj_1
+LUT4        ---     0.448              C to Z              i20_4_lut
+Route         1   e 0.788                                  n45
+LUT4        ---     0.448              C to Z              i1_4_lut_adj_7
+Route        13   e 1.506                                  n73103
+LUT4        ---     0.448              C to Z              i11_3_lut_4_lut_adj_1
+Route         1   e 0.788                                  n76339
                   --------
-                   10.451  (29.6% logic, 70.4% route), 7 logic levels.
+                   21.587  (28.8% logic, 71.2% route), 14 logic levels.
 
-Warning: 10.597 ns is the maximum delay for this constraint.
+Warning: 21.733 ns is the maximum delay for this constraint.
 
 
 <A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -149,7 +191,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clk]                     |     5.000 ns|    10.597 ns|     7 *
+clk0 [get_nets clk]                     |     5.000 ns|    21.733 ns|    14 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -159,23 +201,67 @@ clk0 [get_nets clk]                     |     5.000 ns|    10.597 ns|     7 *
 --------------------------------------------------------------------------------
 Critical Nets                           |   Loads|  Errors| % of total
 --------------------------------------------------------------------------------
-clk_enable_21                           |      18|     868|     89.86%
+n28_adj_1                               |       1|    3477|     84.89%
                                         |        |        |
-clk_enable_18                           |       6|     830|     85.92%
+n45                                     |       1|    3477|     84.89%
                                         |        |        |
-n48                                     |       1|     560|     57.97%
+n73103                                  |      13|    3477|     84.89%
                                         |        |        |
-n46                                     |       1|     280|     28.99%
+n76436                                  |       1|    3477|     84.89%
                                         |        |        |
-n3666                                   |       7|     210|     21.74%
+n76435                                  |       2|    2848|     69.53%
                                         |        |        |
-n3675                                   |       7|     210|     21.74%
+n76658                                  |       7|    2322|     56.69%
                                         |        |        |
-n40                                     |       1|     140|     14.49%
+n76662                                  |       3|    1861|     45.43%
                                         |        |        |
-n42                                     |       1|     140|     14.49%
+n76676                                  |       5|    1585|     38.70%
                                         |        |        |
-n43                                     |       1|     120|     12.42%
+n5                                      |       4|    1477|     36.06%
+                                        |        |        |
+n74706                                  |       4|    1291|     31.52%
+                                        |        |        |
+n76673                                  |       7|    1053|     25.71%
+                                        |        |        |
+n76661                                  |       1|     936|     22.85%
+                                        |        |        |
+n76666                                  |       3|     936|     22.85%
+                                        |        |        |
+n76699                                  |       5|     896|     21.88%
+                                        |        |        |
+step[3]                                 |      26|     888|     21.68%
+                                        |        |        |
+step[0]                                 |      38|     886|     21.63%
+                                        |        |        |
+step[1]                                 |      37|     886|     21.63%
+                                        |        |        |
+n3                                      |       4|     873|     21.31%
+                                        |        |        |
+step[2]                                 |      25|     804|     19.63%
+                                        |        |        |
+n76438                                  |       2|     768|     18.75%
+                                        |        |        |
+n76667                                  |       2|     718|     17.53%
+                                        |        |        |
+n12                                     |       4|     706|     17.24%
+                                        |        |        |
+step[4]                                 |      21|     632|     15.43%
+                                        |        |        |
+n15                                     |       5|     611|     14.92%
+                                        |        |        |
+n76672                                  |       1|     576|     14.06%
+                                        |        |        |
+n76697                                  |       8|     564|     13.77%
+                                        |        |        |
+n76696                                  |       9|     530|     12.94%
+                                        |        |        |
+n76700                                  |       3|     526|     12.84%
+                                        |        |        |
+n76703                                  |       1|     494|     12.06%
+                                        |        |        |
+n76702                                  |       1|     468|     11.43%
+                                        |        |        |
+clk_enable_52                           |      14|     411|     10.03%
                                         |        |        |
 --------------------------------------------------------------------------------
 
@@ -183,12 +269,12 @@ n43                                     |       1|     120|     12.42%
 <A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
 ---------------
 
-Timing errors: 966  Score: 2741978
+Timing errors: 4096  Score: 51477627
 
-Constraints cover  1442 paths, 99 nets, and 257 connections (80.1% coverage)
+Constraints cover  22029 paths, 246 nets, and 751 connections (92.1% coverage)
 
 
-Peak memory: 203530240 bytes, TRCE: 0 bytes, DLYMAN: 0 bytes
+Peak memory: 1436483584 bytes, TRCE: 0 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 
 
 

@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Dec 23 22:40:59 2018
+Sun Dec 23 23:30:34 2018
 
 
 Command Line:  synthesis -f LedTest_impl1_lattice.synproj -gui -msgset /home/tallen/Projects/LatticeLedTest/promote.xml 
@@ -80,7 +80,7 @@ Analyzing Verilog file /home/tallen/Projects/LatticeLedTest/source/test.v. VERI-
 Analyzing Verilog file /usr/local/diamond/3.10_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo3l.v. VERI-1482
 Top module name (Verilog): test
 INFO - synthesis: /home/tallen/Projects/LatticeLedTest/source/test.v(1): compiling module test. VERI-1018
-WARNING - synthesis: /home/tallen/Projects/LatticeLedTest/source/test.v(23): expression size 32 truncated to fit in target size 25. VERI-1209
+WARNING - synthesis: /home/tallen/Projects/LatticeLedTest/source/test.v(23): expression size 32 truncated to fit in target size 23. VERI-1209
 WARNING - synthesis: /home/tallen/Projects/LatticeLedTest/source/test.v(26): expression size 32 truncated to fit in target size 5. VERI-1209
 INFO - synthesis: /usr/local/diamond/3.10_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo3l.v(1759): compiling module OSCH(NOM_FREQ="12.09"). VERI-1018
 Loading NGL library '/usr/local/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
@@ -93,13 +93,19 @@ Top-level module name = test.
 
 
 
-Removed duplicate sequential element char_b(16 bit), because it is equivalent to char_a
-
-Removed duplicate sequential element char_c(16 bit), because it is equivalent to char_a
-
-Removed duplicate sequential element char_d(16 bit), because it is equivalent to char_a
-
 GSR will not be inferred because no asynchronous signal was found in the netlist.
+Duplicate register/latch removal. char_d_i0_i6 is a one-to-one match with char_d_i0_i4.
+Duplicate register/latch removal. char_d_i0_i3 is a one-to-one match with char_d_i0_i1.
+Duplicate register/latch removal. char_d_i0_i16 is a one-to-one match with char_d_i0_i15.
+Duplicate register/latch removal. char_c_i0_i16 is a one-to-one match with char_c_i0_i15.
+Duplicate register/latch removal. char_c_i0_i1 is a one-to-one match with char_c_i0_i3.
+Duplicate register/latch removal. char_c_i0_i6 is a one-to-one match with char_c_i0_i4.
+Duplicate register/latch removal. char_b_i0_i16 is a one-to-one match with char_b_i0_i15.
+Duplicate register/latch removal. char_b_i0_i1 is a one-to-one match with char_b_i0_i3.
+Duplicate register/latch removal. char_b_i0_i6 is a one-to-one match with char_b_i0_i4.
+Duplicate register/latch removal. char_a_i0_i16 is a one-to-one match with char_a_i0_i15.
+Duplicate register/latch removal. char_a_i0_i6 is a one-to-one match with char_a_i0_i4.
+Duplicate register/latch removal. char_a_i0_i3 is a one-to-one match with char_a_i0_i1.
 Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
@@ -112,15 +118,16 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file LedTest_impl1.ngd.
 
 ################### Begin Area Report (test)######################
-Number of register bits => 46 of 7485 (0 % )
-CCU2D => 13
-FD1P3AX => 7
-FD1P3JX => 14
-FD1S3AX => 25
+Number of register bits => 80 of 7485 (1 % )
+CCU2D => 12
+FD1P3AX => 55
+FD1P3JX => 1
+FD1S3AX => 24
 GSR => 1
-LUT4 => 31
+LUT4 => 139
 OB => 64
 OSCH => 1
+PFUMX => 5
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -130,24 +137,26 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : clk, loads : 46
+  Net : clk, loads : 80
 Clock Enable Nets
-Number of Clock Enables: 2
-Top 2 highest fanout Clock Enables:
-  Net : clk_enable_21, loads : 18
-  Net : clk_enable_18, loads : 6
+Number of Clock Enables: 4
+Top 4 highest fanout Clock Enables:
+  Net : clk_enable_45, loads : 26
+  Net : clk_enable_52, loads : 14
+  Net : clk_enable_41, loads : 13
+  Net : clk_enable_56, loads : 8
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : clk_enable_21, loads : 18
-  Net : step_1, loads : 14
-  Net : step_2, loads : 13
-  Net : step_3, loads : 12
-  Net : step_0, loads : 10
-  Net : n3675, loads : 7
-  Net : n3666, loads : 7
-  Net : clk_enable_18, loads : 6
-  Net : LEDd_c, loads : 4
-  Net : n3352, loads : 4
+  Net : step_0, loads : 38
+  Net : step_1, loads : 37
+  Net : step_3, loads : 26
+  Net : clk_enable_45, loads : 26
+  Net : step_2, loads : 25
+  Net : step_4, loads : 21
+  Net : clk_enable_52, loads : 14
+  Net : clk_enable_41, loads : 13
+  Net : n73103, loads : 13
+  Net : n73862, loads : 13
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -157,7 +166,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clk]                     |  200.000 MHz|   94.366 MHz|     7 *
+clk0 [get_nets clk]                     |  200.000 MHz|   46.013 MHz|    14 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -165,8 +174,8 @@ clk0 [get_nets clk]                     |  200.000 MHz|   94.366 MHz|     7 *
 1 constraints not met.
 
 
-Peak Memory Usage: 194.102  MB
+Peak Memory Usage: 1369.938  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.551  secs
+Elapsed CPU time for LSE flow : 46.483  secs
 --------------------------------------------------------------

@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Dec 23 22:40:59 2018
+Sun Dec 23 23:30:34 2018
 
 
 Command Line:  synthesis -f LedTest_impl1_lattice.synproj -gui -msgset /home/tallen/Projects/LatticeLedTest/promote.xml 
@@ -83,7 +83,7 @@ Analyzing Verilog file /home/tallen/Projects/LatticeLedTest/source/test.v. VERI-
 Analyzing Verilog file /usr/local/diamond/3.10_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo3l.v. VERI-1482
 Top module name (Verilog): test
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/tallen/Projects/LatticeLedTest/source/test.v(1): " arg1="test" arg2="/home/tallen/Projects/LatticeLedTest/source/test.v" arg3="1"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/tallen/Projects/LatticeLedTest/source/test.v(23): " arg1="32" arg2="25" arg3="/home/tallen/Projects/LatticeLedTest/source/test.v" arg4="23"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/tallen/Projects/LatticeLedTest/source/test.v(23): " arg1="32" arg2="23" arg3="/home/tallen/Projects/LatticeLedTest/source/test.v" arg4="23"  />
     <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/tallen/Projects/LatticeLedTest/source/test.v(26): " arg1="32" arg2="5" arg3="/home/tallen/Projects/LatticeLedTest/source/test.v" arg4="26"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/usr/local/diamond/3.10_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo3l.v(1759): " arg1="OSCH(NOM_FREQ=&quot;12.09&quot;)" arg2="/usr/local/diamond/3.10_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo3l.v" arg3="1759"  />
 Last elaborated design is test()
@@ -97,13 +97,22 @@ Top-level module name = test.
 
 
 
-Removed duplicate sequential element char_b(16 bit), because it is equivalent to char_a
 
-Removed duplicate sequential element char_c(16 bit), because it is equivalent to char_a
-
-Removed duplicate sequential element char_d(16 bit), because it is equivalent to char_a
-
-GSR will not be inferred because no asynchronous signal was found in the netlist.
+ PMux Accepted with new tuning LEDa_15__I_0
+ PMux Accepted with new tuning LEDb_15__I_0
+ PMux Accepted with new tuning LEDc_15__I_0GSR will not be inferred because no asynchronous signal was found in the netlist.
+Duplicate register/latch removal. char_d_i0_i6 is a one-to-one match with char_d_i0_i4.
+Duplicate register/latch removal. char_d_i0_i3 is a one-to-one match with char_d_i0_i1.
+Duplicate register/latch removal. char_d_i0_i16 is a one-to-one match with char_d_i0_i15.
+Duplicate register/latch removal. char_c_i0_i16 is a one-to-one match with char_c_i0_i15.
+Duplicate register/latch removal. char_c_i0_i1 is a one-to-one match with char_c_i0_i3.
+Duplicate register/latch removal. char_c_i0_i6 is a one-to-one match with char_c_i0_i4.
+Duplicate register/latch removal. char_b_i0_i16 is a one-to-one match with char_b_i0_i15.
+Duplicate register/latch removal. char_b_i0_i1 is a one-to-one match with char_b_i0_i3.
+Duplicate register/latch removal. char_b_i0_i6 is a one-to-one match with char_b_i0_i4.
+Duplicate register/latch removal. char_a_i0_i16 is a one-to-one match with char_a_i0_i15.
+Duplicate register/latch removal. char_a_i0_i6 is a one-to-one match with char_a_i0_i4.
+Duplicate register/latch removal. char_a_i0_i3 is a one-to-one match with char_a_i0_i1.
 Applying 200.000000 MHz constraint to all clocks
 
     <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
@@ -119,21 +128,22 @@ Running DRC...
 DRC complete with no errors or warnings
 
 Design Results:
-    159 blocks expanded
+    305 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file LedTest_impl1.ngd.
 
 ################### Begin Area Report (test)######################
-Number of register bits => 46 of 7485 (0 % )
-CCU2D => 13
-FD1P3AX => 7
-FD1P3JX => 14
-FD1S3AX => 25
+Number of register bits => 80 of 7485 (1 % )
+CCU2D => 12
+FD1P3AX => 55
+FD1P3JX => 1
+FD1S3AX => 24
 GSR => 1
-LUT4 => 31
+LUT4 => 139
 OB => 64
 OSCH => 1
+PFUMX => 5
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -143,24 +153,26 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : clk, loads : 46
+  Net : clk, loads : 80
 Clock Enable Nets
-Number of Clock Enables: 2
-Top 2 highest fanout Clock Enables:
-  Net : clk_enable_21, loads : 18
-  Net : clk_enable_18, loads : 6
+Number of Clock Enables: 4
+Top 4 highest fanout Clock Enables:
+  Net : clk_enable_45, loads : 26
+  Net : clk_enable_52, loads : 14
+  Net : clk_enable_41, loads : 13
+  Net : clk_enable_56, loads : 8
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : clk_enable_21, loads : 18
-  Net : step_1, loads : 14
-  Net : step_2, loads : 13
-  Net : step_3, loads : 12
-  Net : step_0, loads : 10
-  Net : n3675, loads : 7
-  Net : n3666, loads : 7
-  Net : clk_enable_18, loads : 6
-  Net : LEDd_c, loads : 4
-  Net : n3352, loads : 4
+  Net : step_0, loads : 38
+  Net : step_1, loads : 37
+  Net : step_3, loads : 26
+  Net : clk_enable_45, loads : 26
+  Net : step_2, loads : 25
+  Net : step_4, loads : 21
+  Net : clk_enable_52, loads : 14
+  Net : clk_enable_41, loads : 13
+  Net : n73103, loads : 13
+  Net : n73862, loads : 13
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -170,7 +182,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clk]                     |  200.000 MHz|   94.366 MHz|     7 *
+clk0 [get_nets clk]                     |  200.000 MHz|   46.013 MHz|    14 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -178,10 +190,10 @@ clk0 [get_nets clk]                     |  200.000 MHz|   94.366 MHz|     7 *
 1 constraints not met.
 
 
-Peak Memory Usage: 194.102  MB
+Peak Memory Usage: 1369.938  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.551  secs
+Elapsed CPU time for LSE flow : 46.483  secs
 --------------------------------------------------------------
 
 map -a "MachXO3LF" -p LCMXO3LF-6900C -t CABGA256 -s 5 -oc Commercial   "LedTest_impl1.ngd" -o "LedTest_impl1_map.ncd" -pr "LedTest_impl1.prf" -mp "LedTest_impl1.mrp" -lpf "/home/tallen/Projects/LatticeLedTest/impl1/LedTest_impl1.lpf" -lpf "/home/tallen/Projects/LatticeLedTest/LedTest.lpf" -c 0            
@@ -218,17 +230,17 @@ Optimizing...
 
 
 Design Summary:
-   Number of registers:     46 out of  7485 (1%)
-      PFU registers:           46 out of  6864 (1%)
+   Number of registers:     80 out of  7485 (1%)
+      PFU registers:           80 out of  6864 (1%)
       PIO registers:            0 out of   621 (0%)
-   Number of SLICEs:        32 out of  3432 (1%)
-      SLICEs as Logic/ROM:     32 out of  3432 (1%)
+   Number of SLICEs:        82 out of  3432 (2%)
+      SLICEs as Logic/ROM:     82 out of  3432 (2%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:         13 out of  3432 (0%)
-   Number of LUT4s:         57 out of  6864 (1%)
-      Number used as logic LUTs:         31
+      SLICEs as Carry:         12 out of  3432 (0%)
+   Number of LUT4s:        163 out of  6864 (2%)
+      Number used as logic LUTs:        139
       Number used as distributed RAM:     0
-      Number used as ripple logic:       26
+      Number used as ripple logic:       24
       Number used as shift registers:     0
    Number of PIO sites used: 64 + 4(JTAG) out of 207 (33%)
    Number of block RAMs:  0 out of 26 (0%)
@@ -254,25 +266,26 @@ Design Summary:
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
    Number of clocks:  1
-     Net clk: 28 loads, 28 rising, 0 falling (Driver: OSCH_inst )
-   Number of Clock Enables:  2
-     Net clk_enable_21: 12 loads, 12 LSLICEs
-     Net clk_enable_18: 3 loads, 3 LSLICEs
-   Number of LSRs:  2
-     Net n3666: 4 loads, 4 LSLICEs
-     Net n3675: 7 loads, 7 LSLICEs
+     Net clk: 42 loads, 42 rising, 0 falling (Driver: OSCH_inst )
+   Number of Clock Enables:  4
+     Net clk_enable_52: 7 loads, 7 LSLICEs
+     Net clk_enable_45: 13 loads, 13 LSLICEs
+     Net clk_enable_41: 7 loads, 7 LSLICEs
+     Net clk_enable_56: 2 loads, 2 LSLICEs
+   Number of LSRs:  1
+     Net n74759: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net clk_enable_21: 14 loads
-     Net step_1: 14 loads
-     Net step_2: 13 loads
-     Net step_3: 12 loads
-     Net step_0: 10 loads
-     Net n3675: 7 loads
-     Net LEDd_c: 4 loads
-     Net n3352: 4 loads
-     Net n3361: 4 loads
-     Net n3363: 4 loads
+     Net step_0: 38 loads
+     Net step_1: 37 loads
+     Net step_3: 26 loads
+     Net step_2: 25 loads
+     Net step_4: 21 loads
+     Net clk_enable_45: 13 loads
+     Net n73103: 13 loads
+     Net n73862: 13 loads
+     Net n14: 9 loads
+     Net n76696: 9 loads
  
 
    Number of warnings:  0
@@ -313,7 +326,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.3.144
-Sun Dec 23 22:41:01 2018
+Sun Dec 23 23:31:22 2018
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -342,11 +355,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 1167 paths, 1 nets, and 294 connections (100.00% coverage)
+Constraints cover 19037 paths, 1 nets, and 742 connections (100.00% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.3.144
-Sun Dec 23 22:41:01 2018
+Sun Dec 23 23:31:22 2018
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -375,7 +388,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 1167 paths, 1 nets, and 294 connections (100.00% coverage)
+Constraints cover 19037 paths, 1 nets, and 742 connections (100.00% coverage)
 
 
 
@@ -398,7 +411,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "LedTest_impl1_map.ncd"
-Sun Dec 23 22:41:01 2018
+Sun Dec 23 23:31:22 2018
 
 PAR: Place And Route Diamond (64-bit) 3.10.3.144.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset /home/tallen/Projects/LatticeLedTest/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF LedTest_impl1_map.ncd LedTest_impl1.dir/5_1.ncd LedTest_impl1.prf
@@ -425,38 +438,38 @@ Device utilization summary:
    PIO (prelim)   64+4(JTAG)/336     20% used
                   64+4(JTAG)/207     33% bonded
 
-   SLICE             32/3432         <1% used
+   SLICE             82/3432          2% used
 
    OSC                1/1           100% used
 
 
-Number of Signals: 115
-Number of Connections: 294
+Number of Signals: 251
+Number of Connections: 742
 
 Pin Constraint Summary:
    64 out of 64 pins locked (100% locked).
 
 The following 1 signal is selected to use the primary clock routing resources:
-    clk (driver: OSCH_inst, clk load #: 28)
+    clk (driver: OSCH_inst, clk load #: 42)
 
 
 The following 1 signal is selected to use the secondary clock routing resources:
-    clk_enable_21 (driver: SLICE_34, clk load #: 0, sr load #: 0, ce load #: 12)
+    clk_enable_45 (driver: SLICE_58, clk load #: 0, sr load #: 0, ce load #: 13)
 
 No signal is selected as Global Set/Reset.
 Starting Placer Phase 0.
-
+........
 Finished Placer Phase 0.  REAL time: 0 secs 
 
 Starting Placer Phase 1.
 ....................
-Placer score = 48890.
-Finished Placer Phase 1.  REAL time: 3 secs 
+Placer score = 76222.
+Finished Placer Phase 1.  REAL time: 4 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  48511
-Finished Placer Phase 2.  REAL time: 3 secs 
+Placer score =  76165
+Finished Placer Phase 2.  REAL time: 4 secs 
 
 
 ------------------ Clock Report ------------------
@@ -468,8 +481,8 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
-  PRIMARY "clk" from OSC on comp "OSCH_inst" on site "OSC", clk load = 28
-  SECONDARY "clk_enable_21" from F1 on comp "SLICE_34" on site "R14C20C", clk load = 0, ce load = 12, sr load = 0
+  PRIMARY "clk" from OSC on comp "OSCH_inst" on site "OSC", clk load = 42
+  SECONDARY "clk_enable_45" from F0 on comp "SLICE_58" on site "R21C20A", clk load = 0, ce load = 13, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
   SECONDARY: 1 out of 8 (12%)
@@ -498,16 +511,16 @@ I/O Bank Usage Summary:
 | 5        | 0 / 20 (  0%)  | -          | -         |
 +----------+----------------+------------+-----------+
 
-Total placer CPU time: 2 secs 
+Total placer CPU time: 4 secs 
 
 Dumping design to file LedTest_impl1.dir/5_1.ncd.
 
-0 connections routed; 294 unrouted.
+0 connections routed; 742 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 4 secs 
+Completed router resource preassignment. Real time: 6 secs 
 
-Start NBR router at Sun Dec 23 22:41:05 EST 2018
+Start NBR router at Sun Dec 23 23:31:28 EST 2018
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -522,41 +535,41 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at Sun Dec 23 22:41:05 EST 2018
+Start NBR special constraint process at Sun Dec 23 23:31:28 EST 2018
 
-Start NBR section for initial routing at Sun Dec 23 22:41:05 EST 2018
+Start NBR section for initial routing at Sun Dec 23 23:31:28 EST 2018
 Level 4, iteration 1
-9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 69.541ns/0.000ns; real time: 4 secs 
+30(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 61.671ns/0.000ns; real time: 6 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at Sun Dec 23 22:41:05 EST 2018
+Start NBR section for normal routing at Sun Dec 23 23:31:28 EST 2018
 Level 4, iteration 1
-5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 69.527ns/0.000ns; real time: 4 secs 
+17(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 61.671ns/0.000ns; real time: 6 secs 
 Level 4, iteration 2
-4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 69.527ns/0.000ns; real time: 4 secs 
+6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 61.553ns/0.000ns; real time: 6 secs 
 Level 4, iteration 3
 2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 69.527ns/0.000ns; real time: 4 secs 
+Estimated worst slack/total negative slack<setup>: 61.566ns/0.000ns; real time: 6 secs 
 Level 4, iteration 4
 1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 69.527ns/0.000ns; real time: 4 secs 
+Estimated worst slack/total negative slack<setup>: 61.566ns/0.000ns; real time: 6 secs 
 Level 4, iteration 5
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 69.527ns/0.000ns; real time: 4 secs 
+Estimated worst slack/total negative slack<setup>: 61.566ns/0.000ns; real time: 6 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at Sun Dec 23 22:41:05 EST 2018
+Start NBR section for setup/hold timing optimization with effort level 3 at Sun Dec 23 23:31:28 EST 2018
 
-Start NBR section for re-routing at Sun Dec 23 22:41:06 EST 2018
+Start NBR section for re-routing at Sun Dec 23 23:31:28 EST 2018
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 69.527ns/0.000ns; real time: 5 secs 
+Estimated worst slack/total negative slack<setup>: 61.566ns/0.000ns; real time: 6 secs 
 
-Start NBR section for post-routing at Sun Dec 23 22:41:06 EST 2018
+Start NBR section for post-routing at Sun Dec 23 23:31:28 EST 2018
 
 End NBR router with 0 unrouted connection
 
@@ -564,17 +577,17 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 69.527ns
+  Estimated worst slack<setup> : 61.566ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-Total CPU time 4 secs 
-Total REAL time: 5 secs 
+Total CPU time 6 secs 
+Total REAL time: 7 secs 
 Completely routed.
-End of route.  294 routed (100.00%); 0 unrouted.
+End of route.  742 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -585,14 +598,14 @@ Dumping design to file LedTest_impl1.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = Success
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 69.527
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 61.566
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
-PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.379
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.306
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 4 secs 
-Total REAL time to completion: 5 secs 
+Total CPU  time to completion: 7 secs 
+Total REAL time to completion: 7 secs 
 
 par done!
 
@@ -627,7 +640,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.3.144
-Sun Dec 23 22:41:07 2018
+Sun Dec 23 23:31:31 2018
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -656,11 +669,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 1167 paths, 1 nets, and 294 connections (100.00% coverage)
+Constraints cover 19037 paths, 1 nets, and 742 connections (100.00% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.3.144
-Sun Dec 23 22:41:07 2018
+Sun Dec 23 23:31:31 2018
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -689,7 +702,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 1167 paths, 1 nets, and 294 connections (100.00% coverage)
+Constraints cover 19037 paths, 1 nets, and 742 connections (100.00% coverage)
 
 
 
