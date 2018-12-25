@@ -1,6 +1,6 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Mon Dec 24 00:33:51 2018 *
+NOTE DATE CREATED: Tue Dec 25 01:52:11 2018 *
 NOTE DESIGN NAME: test *
 NOTE DEVICE NAME: LCMXO3LF-6900C-5CABGA256 *
 NOTE PIN ASSIGNMENTS *
@@ -11,12 +11,12 @@ NOTE PINS LEDd[2] : H15 : out *
 NOTE PINS LEDd[3] : D14 : out *
 NOTE PINS LEDd[4] : C15 : out *
 NOTE PINS LEDd[5] : E14 : out *
-NOTE PINS LEDd[6] : E15 : out *
-NOTE PINS LEDd[7] : B16 : out *
+NOTE PINS LEDd[6] : B16 : out *
+NOTE PINS LEDd[7] : E15 : out *
 NOTE PINS LEDd[8] : E16 : out *
 NOTE PINS LEDd[9] : F16 : out *
-NOTE PINS LEDd[10] : F15 : out *
-NOTE PINS LEDd[11] : H16 : out *
+NOTE PINS LEDd[10] : H16 : out *
+NOTE PINS LEDd[11] : F15 : out *
 NOTE PINS LEDd[12] : J16 : out *
 NOTE PINS LEDd[13] : G14 : out *
 NOTE PINS LEDd[14] : F14 : out *
@@ -27,12 +27,12 @@ NOTE PINS LEDc[2] : K13 : out *
 NOTE PINS LEDc[3] : K15 : out *
 NOTE PINS LEDc[4] : K16 : out *
 NOTE PINS LEDc[5] : L16 : out *
-NOTE PINS LEDc[6] : M16 : out *
-NOTE PINS LEDc[7] : J15 : out *
+NOTE PINS LEDc[6] : J15 : out *
+NOTE PINS LEDc[7] : M16 : out *
 NOTE PINS LEDc[8] : L15 : out *
 NOTE PINS LEDc[9] : M15 : out *
-NOTE PINS LEDc[10] : N16 : out *
-NOTE PINS LEDc[11] : M14 : out *
+NOTE PINS LEDc[10] : M14 : out *
+NOTE PINS LEDc[11] : N16 : out *
 NOTE PINS LEDc[12] : K12 : out *
 NOTE PINS LEDc[13] : H14 : out *
 NOTE PINS LEDc[14] : J14 : out *
@@ -43,12 +43,12 @@ NOTE PINS LEDb[2] : L8 : out *
 NOTE PINS LEDb[3] : R4 : out *
 NOTE PINS LEDb[4] : T5 : out *
 NOTE PINS LEDb[5] : R6 : out *
-NOTE PINS LEDb[6] : T7 : out *
-NOTE PINS LEDb[7] : T4 : out *
+NOTE PINS LEDb[6] : T4 : out *
+NOTE PINS LEDb[7] : T7 : out *
 NOTE PINS LEDb[8] : L7 : out *
 NOTE PINS LEDb[9] : P7 : out *
-NOTE PINS LEDb[10] : R8 : out *
-NOTE PINS LEDb[11] : P8 : out *
+NOTE PINS LEDb[10] : P8 : out *
+NOTE PINS LEDb[11] : R8 : out *
 NOTE PINS LEDb[12] : T8 : out *
 NOTE PINS LEDb[13] : T3 : out *
 NOTE PINS LEDb[14] : P4 : out *
@@ -59,12 +59,12 @@ NOTE PINS LEDa[2] : T14 : out *
 NOTE PINS LEDa[3] : T9 : out *
 NOTE PINS LEDa[4] : R10 : out *
 NOTE PINS LEDa[5] : P10 : out *
-NOTE PINS LEDa[6] : N10 : out *
-NOTE PINS LEDa[7] : M8 : out *
+NOTE PINS LEDa[6] : M8 : out *
+NOTE PINS LEDa[7] : N10 : out *
 NOTE PINS LEDa[8] : T10 : out *
-NOTE PINS LEDa[9] : P11 : out *
-NOTE PINS LEDa[10] : M11 : out *
-NOTE PINS LEDa[11] : R11 : out *
+NOTE PINS LEDa[9] : M11 : out *
+NOTE PINS LEDa[10] : R11 : out *
+NOTE PINS LEDa[11] : P11 : out *
 NOTE PINS LEDa[12] : T12 : out *
 NOTE PINS LEDa[13] : P9 : out *
 NOTE PINS LEDa[14] : N9 : out *

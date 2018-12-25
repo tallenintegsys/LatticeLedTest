@@ -29,35 +29,35 @@ begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b0011000011111111; //C
+			char_d = 16'b0010001000111111; //S
 		end
 		if (step == 2)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b0000000011111111; //O
+			char_d = 16'b1111000101111101; //a
 		end
 		if (step == 3)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b0000001101101101; //O
+			char_d = 16'b1111110101111101; //n
 		end
 		if (step == 4)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b1111111111010101; //Y
+			char_d = 16'b1111110001111111; //t
 		end
 		if (step == 5)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b1111111111111111; //
+			char_d = 16'b1111000101111101; //a
 		end
 		if (step == 6)
 		begin
@@ -72,21 +72,21 @@ begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b1111000110111101; //a
+			char_d = 16'b1110110111111010; //w
 		end
 		if (step == 8)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b1111110110111101; //n
+			char_d = 16'b1111000101111101; //a
 		end
 		if (step == 9)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b1100011101111101; //d
+			char_d = 16'b0111011001111101; //s
 		end
 		if (step == 10)
 		begin
@@ -100,7 +100,7 @@ begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b1111111111111111; // 
+			char_d = 16'b1111110001111101; // h
 		end
 
 		if (step == 12)
@@ -108,28 +108,28 @@ begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b0000110000111111; //A
+			char_d = 16'b1111010101111110; //e
 		end
 		if (step == 13)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b0001110000111111; //P
+			char_d = 16'b1111110101111111; //r
 		end
 		if (step == 14)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b0001110000111111; //P
+			char_d = 16'b1111010101111110; //e
 		end
 		if (step == 15)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b0000110000111111; //A
+			char_d = 16'b1111111111111111; //
 		end
 		if (step == 16)
 		begin
@@ -150,21 +150,21 @@ begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b1111000110111101; //a
+			char_d = 16'b1111111111111111; //
 		end
 		if (step == 19)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b1111110110111101; //n
+			char_d = 16'b1111111111111111; //
 		end
 		if (step == 20)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b1100011101111101; //d
+			char_d = 16'b1111111111111111; //
 		end
 		if (step == 21)
 		begin
@@ -186,28 +186,28 @@ begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b0000000011111111; //O
+			char_d = 16'b1111111111111111; //
 		end
 		if (step == 24)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b1100110011010111; //M
+			char_d = 16'b1111111111111111; //
 		end
 		if (step == 25)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b0000110000111111; //A
+			char_d = 16'b1111111111111111; //
 		end
 		if (step == 26)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b1100110000111111; //H
+			char_d = 16'b1111111111111111; //
 		end
 		if (step == 27)
 		begin

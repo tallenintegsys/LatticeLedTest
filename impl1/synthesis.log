@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Dec 24 00:32:36 2018
+Tue Dec 25 01:50:53 2018
 
 
 Command Line:  synthesis -f LedTest_impl1_lattice.synproj -gui -msgset /home/tallen/Projects/LatticeLedTest/promote.xml 
@@ -94,18 +94,22 @@ Top-level module name = test.
 
 
 GSR will not be inferred because no asynchronous signal was found in the netlist.
-Duplicate register/latch removal. char_d_i0_i16 is a one-to-one match with char_d_i0_i15.
-Duplicate register/latch removal. char_d_i0_i1 is a one-to-one match with char_d_i0_i3.
-Duplicate register/latch removal. char_d_i0_i6 is a one-to-one match with char_d_i0_i4.
+Duplicate register/latch removal. char_d_i0_i15 is a one-to-one match with char_d_i0_i7.
+Duplicate register/latch removal. char_d_i0_i14 is a one-to-one match with char_d_i0_i6.
+Duplicate register/latch removal. char_d_i0_i5 is a one-to-one match with char_d_i0_i14.
+Duplicate register/latch removal. char_d_i0_i4 is a one-to-one match with char_d_i0_i5.
+Duplicate register/latch removal. char_c_i0_i4 is a one-to-one match with char_c_i0_i14.
+Duplicate register/latch removal. char_c_i0_i15 is a one-to-one match with char_c_i0_i7.
+Duplicate register/latch removal. char_c_i0_i6 is a one-to-one match with char_c_i0_i5.
+Duplicate register/latch removal. char_b_i0_i5 is a one-to-one match with char_b_i0_i6.
+Duplicate register/latch removal. char_b_i0_i4 is a one-to-one match with char_b_i0_i14.
+Duplicate register/latch removal. char_b_i0_i15 is a one-to-one match with char_b_i0_i7.
 Duplicate register/latch removal. char_c_i0_i4 is a one-to-one match with char_c_i0_i6.
-Duplicate register/latch removal. char_c_i0_i3 is a one-to-one match with char_c_i0_i1.
-Duplicate register/latch removal. char_c_i0_i16 is a one-to-one match with char_c_i0_i15.
-Duplicate register/latch removal. char_b_i0_i4 is a one-to-one match with char_b_i0_i6.
-Duplicate register/latch removal. char_b_i0_i3 is a one-to-one match with char_b_i0_i1.
-Duplicate register/latch removal. char_b_i0_i16 is a one-to-one match with char_b_i0_i15.
-Duplicate register/latch removal. char_a_i0_i16 is a one-to-one match with char_a_i0_i15.
-Duplicate register/latch removal. char_a_i0_i6 is a one-to-one match with char_a_i0_i4.
-Duplicate register/latch removal. char_a_i0_i3 is a one-to-one match with char_a_i0_i1.
+Duplicate register/latch removal. char_b_i0_i5 is a one-to-one match with char_b_i0_i4.
+Duplicate register/latch removal. char_a_i0_i15 is a one-to-one match with char_a_i0_i7.
+Duplicate register/latch removal. char_a_i0_i14 is a one-to-one match with char_a_i0_i4.
+Duplicate register/latch removal. char_a_i0_i6 is a one-to-one match with char_a_i0_i5.
+Duplicate register/latch removal. char_a_i0_i14 is a one-to-one match with char_a_i0_i6.
 Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
@@ -118,15 +122,16 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file LedTest_impl1.ngd.
 
 ################### Begin Area Report (test)######################
-Number of register bits => 80 of 7485 (1 % )
+Number of register bits => 76 of 7485 (1 % )
 CCU2D => 12
-FD1P3AX => 56
+FD1P3AX => 42
+FD1P3JX => 10
 FD1S3AX => 24
 GSR => 1
-LUT4 => 151
+LUT4 => 105
 OB => 64
 OSCH => 1
-PFUMX => 11
+PFUMX => 4
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -136,25 +141,26 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : clk, loads : 80
+  Net : clk, loads : 76
 Clock Enable Nets
-Number of Clock Enables: 3
-Top 3 highest fanout Clock Enables:
-  Net : clk_enable_56, loads : 39
-  Net : clk_enable_42, loads : 13
-  Net : clk_enable_55, loads : 7
+Number of Clock Enables: 4
+Top 4 highest fanout Clock Enables:
+  Net : clk_enable_47, loads : 24
+  Net : clk_enable_51, loads : 12
+  Net : clk_enable_52, loads : 12
+  Net : clk_enable_45, loads : 9
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : clk_enable_56, loads : 39
-  Net : step_4, loads : 33
-  Net : step_1, loads : 33
-  Net : step_0, loads : 31
-  Net : step_2, loads : 30
-  Net : step_3, loads : 27
-  Net : n91995, loads : 15
-  Net : n15, loads : 14
-  Net : clk_enable_42, loads : 13
-  Net : n91543, loads : 13
+  Net : step_3, loads : 24
+  Net : clk_enable_47, loads : 24
+  Net : step_4, loads : 23
+  Net : step_2, loads : 23
+  Net : step_0, loads : 22
+  Net : step_1, loads : 21
+  Net : n88177, loads : 13
+  Net : clk_enable_51, loads : 12
+  Net : clk_enable_52, loads : 12
+  Net : n88135, loads : 12
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -164,7 +170,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clk]                     |  200.000 MHz|   51.832 MHz|    12 *
+clk0 [get_nets clk]                     |  200.000 MHz|   53.513 MHz|    12 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -172,8 +178,8 @@ clk0 [get_nets clk]                     |  200.000 MHz|   51.832 MHz|    12 *
 1 constraints not met.
 
 
-Peak Memory Usage: 1091.840  MB
+Peak Memory Usage: 1149.684  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 61.887  secs
+Elapsed CPU time for LSE flow : 64.022  secs
 --------------------------------------------------------------
