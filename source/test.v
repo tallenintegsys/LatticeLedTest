@@ -3,6 +3,8 @@ module test (
 	output	wire [15:0] LEDb,
 	output	wire [15:0] LEDc,
 	output	wire [15:0] LEDd
+//	output  wire [7:0] ascii,
+//	input  wire [15:0] seg
 );
 
 wire	clk;
@@ -12,11 +14,12 @@ reg [15:0] char_a;
 reg [15:0] char_b;
 reg [15:0] char_c;
 reg [15:0] char_d;
+reg [7:0] char;
 
 assign LEDa[15:0] = char_a[15:0];
 assign LEDb[15:0] = char_b[15:0];
 assign LEDc[15:0] = char_c[15:0];
-assign LEDd[15:0] = char_d[15:0];
+assign LEDd[15:0] = char_d[15:0];//assign ascii[7:0] = char[7:0];
 
 always @ (posedge clk)
 begin
@@ -29,28 +32,32 @@ begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b0010001000111111; //S
+			char = "a";
+//			char_d = seg;
 		end
 		if (step == 2)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b1111000101111101; //a
+			char = "b";
+//			char_d = seg;
 		end
 		if (step == 3)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b1111110101111101; //n
+			char = "c";
+//			char_d = seg;
 		end
 		if (step == 4)
 		begin
 			char_a = char_b;
 			char_b = char_c;
 			char_c = char_d;
-			char_d = 16'b1111110001111111; //t
+			char = "d";
+//			char_d = seg;
 		end
 		if (step == 5)
 		begin
